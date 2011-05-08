@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ploneconf2011.theme">
+
+  <!-- 'Plone Conference 2011 Theme' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Plone Conference 2011 Theme"
+      />
+  
+  <!-- For overriding templates, add z3c.jbot to the base.cfg to use -->    
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:templateOverrides
+      directory="template-overrides"
+      layer=".interfaces.IThemeSpecific" />
+  
+  <!-- Viewlets registration -->
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+
+  <!-- Resource directory for stylesheets -->
+
+</configure>

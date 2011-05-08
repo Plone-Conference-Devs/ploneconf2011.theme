@@ -1,0 +1,9 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="ploneconf2011.theme">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
+
+</configure>

@@ -1,0 +1,2 @@
+recursive-include ploneconf2011 *
+global-exclude *pyc
