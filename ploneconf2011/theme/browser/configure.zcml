@@ -16,12 +16,17 @@
   <browser:templateOverrides
       directory="template-overrides"
       layer=".interfaces.IThemeSpecific" />
+      
+  <!-- Resource directory for fonts -->
+  <browser:resourceDirectory
+      name="fonts"
+      directory="fonts"
+      layer=".interfaces.IThemeSpecific"
+      />
   
   <!-- Viewlets registration -->
   <!-- Zope 3 browser resources -->
 
-  <!-- Resource directory for images -->
-
-  <!-- Resource directory for stylesheets -->
+ 
 
 </configure>

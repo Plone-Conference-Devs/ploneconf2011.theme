@@ -3,8 +3,61 @@
   <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
 */
 
+body {
+    background-color: #e8ddcb;
+    color: #ffffff;
+    font-family: 'MisoRegular', Arial, sans-serif;
+}
+
+#visual-portal-wrapper {
+    width: 965px;
+    margin: 0 auto;
+    background: transparent url('content_bg.png') repeat-y 300px top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+    color: #b31010;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+/* global nav */
+#portal-globalnav,
+#portal-globalnav a,
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'MisoRegular', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#portal-globalnav {
+    float: right;
+}
 
 
+/* authoring */
+#content .configlets li {
+    display: block;
+}
+
+body#content {
+    background-color: #000000;
+}
 
 
 /* </dtml-with> */
