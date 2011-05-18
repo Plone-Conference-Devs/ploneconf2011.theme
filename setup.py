@@ -26,6 +26,7 @@ setup(name='ploneconf2011.theme',
           'setuptools',
           'z3c.jbot',
           'plonetheme.basic',
+          'collective.easyslideshow',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

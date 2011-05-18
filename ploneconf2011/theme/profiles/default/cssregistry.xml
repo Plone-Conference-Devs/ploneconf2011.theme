@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
+    <stylesheet title="" applyPrefix="False" authenticated="False"
+       cacheable="True" compression="safe" conditionalcomment="" cookable="True"
+       enabled="True" expression="" id="++resource++fonts/fonts.css" media=""
+       rel="stylesheet" rendering="import"/>
 
 </object>
