@@ -1,0 +1,6 @@
+<!-- put in some logic to figure out what section you are in,
+and display a different background per section -->
+
+<script type="text/javascript">
+  $.backstretch("/Plone/buildings_bg.png", {speed: 150});
+</script>
