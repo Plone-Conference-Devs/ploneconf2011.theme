@@ -49,6 +49,37 @@ h3 {
     float: right;
 }
 
+/* homepage slideshow */
+#slideshow {
+    width: 460px;
+    height: 460px;
+    border: none;
+}
+
+#slideshow .slideWrapper {
+    border: 30px solid #3c4d47;
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.imageCaption {
+    width: 350px;
+    margin: 300px 0 0 45px;
+    background: transparent none;
+}
+
+.imageCaption .imageTitle {
+    font-family: SkinBonesRegular, Arial, sans-serif;
+    font-size: 220%;
+}
+
+.imageCaption .imageDescrip {
+    padding: 10px 0 0 25px;
+    font-size: 27px;
+    line-height: 25px;
+}
 
 /* authoring */
 #content .configlets li {
