@@ -3,5 +3,7 @@
   <version>1</version>
   <dependencies>
       <dependency>profile-plonetheme.basic:default</dependency>
+      <dependency>profile-webcouturier.dropdownmenu:default</dependency>
+      <dependency>profile-collective.easyslideshow:default</dependency>
     </dependencies>
 </metadata>
