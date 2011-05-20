@@ -49,6 +49,17 @@ h3 {
     float: right;
 }
 
+#portal-globalnav ul {
+	background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-style: solid;
+}
+
+#portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
+	border-style: none;
+	color: #000;
+}
+
 /* homepage slideshow */
 #slideshow {
     width: 460px;

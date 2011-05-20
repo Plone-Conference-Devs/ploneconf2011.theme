@@ -3,4 +3,7 @@
     <javascript authenticated="False" cacheable="True" compression="safe"
        conditionalcomment="" cookable="True" enabled="on" expression=""
        id="jquery.backstretch.min.js" inline="False"/>
+	<javascript authenticated="False" cacheable="True" compression="safe"
+	    conditionalcomment="" cookable="True" enabled="on" expression=""
+	    id="ploneconf.js" inline="False"/>
 </object>

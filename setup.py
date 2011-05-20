@@ -27,6 +27,7 @@ setup(name='ploneconf2011.theme',
           'z3c.jbot',
           'plonetheme.basic',
           'collective.easyslideshow',
+		  'webcouturier.dropdownmenu',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
