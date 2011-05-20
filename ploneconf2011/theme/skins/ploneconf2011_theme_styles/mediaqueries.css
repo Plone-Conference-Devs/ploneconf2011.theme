@@ -1,0 +1,160 @@
+/* For devices with narrow screens, phones, tablets, etc. */
+/* support these sizes: 320,480, 600, 768, 1024, 1200 Ethan Marcotte */
+/*  * 1. 1201px and above huge screens * */
+/*  * 2. 1025px to 1200px * */
+/*  * 3. 769px to 1024px  * */
+/*  * 4. 601px to 768px  * */
+/*  * 5. 600px and below  * */
+/*  * 6. 481px to 600px  * */
+/*  * 7. 480px wide and below * */
+/*  * 8. iPhone Portrait * */
+/*  * 9. iPhone Landscape * */
+
+
+/*  * 1. 1200px and above huge screens * */
+@media only screen and (min-width : 1201px)  {
+    body {
+        width: 100%;
+    } 
+    #visual-portal-wrapper {
+        width: 960px;
+        margin: 0px auto 0px auto!important;
+        display: block;
+        float: none;
+    }
+} /*  * END 1. 1200px and above huge screens * */
+
+/*  * 2. 1024px to 1200px * */
+@media only screen and (min-width : 1025px) and (max-width : 1200px) {
+
+
+} /*  * END 2. 1024px to 1200px * */
+
+/*  * 3. 769px to 1024px  * */
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+
+    #portal-searchbox {
+        margin-left: -30% !important;
+        }
+} /*  * END 3. 769px to 1024px * */
+
+/*  * 4. 601px to 768px  * */
+@media only screen and (min-width : 601px) and (max-width : 768px) {        
+    #portal-searchbox {
+        margin-left: -37% !important;
+        }
+
+} /*  * END 4. 601px to 985px  * */
+
+
+
+/*  * 5. 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query* */
+@media (max-width : 600px) {
+
+        
+    /* move columns to below main content and spread out the content */    
+    #portal-column-two, #portal-column-one {
+        clear: both;
+        margin-left: -99% !important;
+        width: 100% !important;
+        } 
+        
+    div#portal-column-content {
+        width: 94%;
+        }
+        
+    dl#portal-personaltools {
+        margin-right: 60px;
+        }
+
+    
+} /*  * END 5. 600px and below  * */
+
+/*  * 6. 481px to 600px  * */
+@media only screen and (min-width : 481px) and (max-width : 600px) {
+        
+
+} /*  * END 6. 481px to 600px  * */
+
+
+/*  *  7.480px wide and below many smart phones * */ 
+@media only screen and  (max-width : 480px) {
+ 
+
+    div#portal-personaltools-wrapper {
+        margin: 0px 30px 0px 0px !important;
+        }
+        
+    ul#portal-globalnav {
+        padding: 0px;
+        }
+        
+    ul#portal-globalnav:before { 
+        display: block;
+        margin-top: 2em;
+        font-size: 2em; 
+        }
+        
+    #portal-globalnav {
+        height: auto;
+        clear: both;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        }
+        
+    #portal-globalnav li {
+        display: block !important;
+        margin-top: 5px;
+        border-top: 1px solid #E7E7E7;
+        border-bottom: 1px solid #E7E7E7;
+        background-color: white;
+        }
+        
+    #portal-globalnav li a {
+        padding: 13px 0px;
+        display: block !important;
+        width: 100% !important;
+        }
+
+
+    #portal-globalnav a:hover, #portal-globalnav .selected a:hover, #portal-globalnav .selected a, #portal-globalnav a:focus {
+        background-color: #4477a1 !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#81a8cb), to(#4477a1) );
+        background: -moz-linear-gradient(-90deg, #81a8cb, #4477a1);
+        color: white;
+        }
+        
+    #portal-breadcrumbs {
+        display: none; /* luke w says breadcrumbs are not found in mobile designs */
+        }
+        
+    #portal-columns { 
+        clear: both;
+        display: block;
+        }
+
+
+
+} /*  * END 7. 480px wide and below * */
+
+
+/*  * 8. iPhone Portrait * */
+@media screen and (max-width: 320px) {  
+
+    
+
+    #portal-personaltools-wrapper {
+        margin-left: 50px !important;
+        margin-right: 0px !important;
+    }
+        
+} /*  * END 8. iPhone Portrait * */
+
+/*  * 9. iPhone Landscape. Since portrait has a max of 320 this effects the iPhone in landscape only * */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+} /*  * END 9. iPhone Landscape * */
+
+

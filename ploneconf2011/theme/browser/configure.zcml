@@ -9,6 +9,15 @@
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="Plone Conference 2011 Theme"
       />
+
+<!-- Special view taken from Sunburst -->
+    <browser:page
+        for="*"
+        name="ResponsiveColumnControl"
+        class=".columncontrol.ColumnControl"
+        permission="zope.Public"
+        allowed_interface=".interfaces.IColumnControl"
+        />   
   
   <!-- For overriding templates, add z3c.jbot to the base.cfg to use -->    
   <include package="z3c.jbot" file="meta.zcml" />

@@ -5,5 +5,15 @@
        cacheable="True" compression="safe" conditionalcomment="" cookable="True"
        enabled="True" expression="" id="++resource++fonts/fonts.css" media=""
        rel="stylesheet" rendering="import"/>
+       
+    <stylesheet title=""
+        id="mediaqueries.css" media="" rel="stylesheet" rendering="import" cacheable="True" 
+        compression="safe" cookable="True" enabled="1" expression=""/>
+
+    <stylesheet title=""
+        id="responsivetheme.css" media="" rel="stylesheet" rendering="import" cacheable="True" 
+        compression="safe" cookable="True" enabled="1" expression=""/>
+    
+    
 
 </object>

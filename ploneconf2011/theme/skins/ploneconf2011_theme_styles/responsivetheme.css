@@ -1,0 +1,8 @@
+/* Stylesheet for the 'Responsive Theme' Plone theme */
+
+/* need to undo what overrides the grid system */
+#portal-searchbox {
+    float: left;
+    clear: none;
+    margin-top: 30px;
+}
