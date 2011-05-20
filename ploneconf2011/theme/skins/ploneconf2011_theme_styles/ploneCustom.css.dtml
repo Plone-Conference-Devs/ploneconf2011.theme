@@ -65,6 +65,8 @@ h3 {
     width: 460px;
     height: 460px;
     border: none;
+    background-color: #3c4d47;
+    border-radius: 400px;
 }
 
 #slideshow .slideWrapper {

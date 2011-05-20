@@ -1,0 +1,56 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+
+<metal:ad define-macro="slideshow"
+          tal:define="view context/@@easyslideshow_view;
+                      slideshowfolderid slideshowfolderid|string:slideshow-folder;
+                      images python:view.getImages(slideshowfolderid);
+                      props view/getSlideshowAllProperties;
+                      pause python:props['pause_hover'] and '1' or '0'">
+  <tal:instructions tal:condition="not: images">
+    To use the slideshow: create a folder called "Slideshow Folder" and add your images.
+    The slideshow will display the image, title and description
+  </tal:instructions>
+  
+  <tal:cond tal:condition="images">
+  
+    <tal:block tal:replace='structure string:&lt;script type="text/javascript" charset="utf-8"&gt;'></tal:block>
+      var jq = jQuery;
+      jq(document).ready(function(){
+            jq("#slideshow").css("visibility","visible");
+            
+            jq('#slideshow').cycle({
+                fx: '<span tal:replace="python:props['transition']" />',
+                pause: <span tal:replace="pause" />,
+                timeout: <span tal:replace="python:props['slide_timeout']" />,
+                speed: <span tal:replace="python:props['transition_speed']" />
+            });
+        });
+    <tal:block tal:replace='structure string:&lt;/script&gt;'></tal:block>
+  
+    <div id="slideshow" class="pics"> 
+        <tal:rep repeat="image images">
+          <div class="slideContainer">
+              <tal:def define="title image/Title;
+                               description image/Description;
+                               url image/getURL;
+                               link_path image/getRelatedLink">
+                <div class="imageCaption" tal:condition="python:props['display_caption']">
+                    <span class="imageTitle" tal:content="title" />
+                    <span class="imageDescrip" tal:content="description" />
+                </div>
+                <div class="slideWrapper">
+                    <a tal:attributes="href string:${context/portal_url}/$link_path"
+                       tal:omit-tag="not:link_path">
+                        <img title="" alt="" tal:attributes="src url" />
+                    </a>
+                </div>
+              </tal:def>
+          </div>
+        </tal:rep>
+    </div>
+  </tal:cond>
+</metal:ad>
+</body>
+</html>
