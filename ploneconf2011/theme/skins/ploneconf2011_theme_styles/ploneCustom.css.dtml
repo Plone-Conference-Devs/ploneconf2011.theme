@@ -41,6 +41,15 @@ h3 {
 #portal-logo  {
     margin: 0px 0px 10px;
 }
+
+#plone-logo {
+    position: fixed; left: 0; top: 50px; 
+    -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+
 /* global nav */
 
 #globalnav-wrapper {
@@ -126,6 +135,46 @@ h3 {
 body#content {
     background-color: #000000;
 }
+
+
+
+/* ----- for the speaker rollover ----- */
+
+ul.thumb {
+    float: left;
+    list-style: none;
+    margin: 0; padding: 10px;
+    width: 360px;
+    font-size: .8em;
+}
+ul.thumb li {
+    margin: 0; padding: 5px;
+    float: left;
+    position: relative;  /* Set the absolute positioning base coordinate */
+    width: 80px;
+    height: 80px;
+    list-style: none;
+}
+ul.thumb li img {
+    /* width: 100px; height: 100px; Set the small thumbnail size */
+    -ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #f0f0f0;
+    position: absolute;
+    left: 0; top: 0;
+}
+ul.thumb li div img {
+    position: relative; border: 0px; background: transparent; padding: 0px;
+}
+ul.thumb li div {position: relative; left: -99999px; background: #fff; width: 200px; padding: 10px;}
+ul.thumb li div.hover {position: relative; left: 50%; top: 50%; z-index: 10; }
+ul.thumb li a:hover {
+    border: none; /* Get rid of border on hover */
+}
+
+/* -------------------------------------- */
+
 
 
 /* </dtml-with> */
