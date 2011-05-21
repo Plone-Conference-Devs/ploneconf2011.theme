@@ -2,5 +2,5 @@
 and display a different background per section -->
 
 <script type="text/javascript">
-  $.backstretch("/Plone/buildings_bg.png", {speed: 150});
+  $.backstretch("bg-frontpage.jpg", {speed: 150});
 </script>
