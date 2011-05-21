@@ -2,5 +2,11 @@
 and display a different background per section -->
 
 <script type="text/javascript">
-  $.backstretch("bg-frontpage.jpg", {speed: 150});
+if (document.body.className.match(/\bsection-front-page\b/)) {
+    $.backstretch("bg-frontpage.jpg", {speed: 150});
+    }
+else {
+    $.backstretch("buildings_bg.png", {speed: 150});
+    }
+    
 </script>

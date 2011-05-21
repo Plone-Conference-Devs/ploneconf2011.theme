@@ -38,6 +38,10 @@ h3 {
     background: url("content_bg.png") repeat-y scroll 300px top transparent;
 }
 
+.section-front-page #portal-top {
+    background: none;
+}
+
 #portal-logo  {
     margin: 0px 0px 10px;
 }
@@ -173,6 +177,14 @@ ul.spkr li div.hover {position: relative; left: 50%; top: 50%; z-index: 10; }
 ul.spkr li a:hover {
     border: none; /* Get rid of border on hover */
 }
+
+
+<dtml-comment> adding some color for @@manage-viewlets</dtml-comment>
+
+.viewletmanager > dt, .viewlet > dt {
+    background-color: #222;
+}
+
 
 /* -------------------------------------- */
 
