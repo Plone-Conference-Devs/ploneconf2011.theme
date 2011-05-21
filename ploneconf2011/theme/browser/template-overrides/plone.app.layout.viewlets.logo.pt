@@ -9,6 +9,4 @@
    i18n:attributes="title">
     <img src="logo.jpg" alt=""
          tal:replace="structure view/logo_tag" /></a>
-
-	<div id="plone-logo"><a href="http://plone.org" title="Plone.org"><img src="logo-plone.jpg" alt="Plone" /></a></div>
 </div>
