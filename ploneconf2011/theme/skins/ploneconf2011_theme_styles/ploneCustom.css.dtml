@@ -141,14 +141,14 @@ body#content {
 
 /* ----- for the speaker rollover ----- */
 
-ul.thumb {
+ul.spkr {
     float: left;
     list-style: none;
     margin: 0; padding: 10px;
     width: 360px;
     font-size: .8em;
 }
-ul.thumb li {
+ul.spkr li {
     margin: 0; padding: 5px;
     float: left;
     position: relative;  /* Set the absolute positioning base coordinate */
@@ -156,7 +156,7 @@ ul.thumb li {
     height: 80px;
     list-style: none;
 }
-ul.thumb li img {
+ul.spkr li img {
     /* width: 100px; height: 100px; Set the small thumbnail size */
     -ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
     border: 1px solid #ddd;
@@ -165,12 +165,12 @@ ul.thumb li img {
     position: absolute;
     left: 0; top: 0;
 }
-ul.thumb li div img {
+ul.spkr li div img {
     position: relative; border: 0px; background: transparent; padding: 0px;
 }
-ul.thumb li div {position: relative; left: -99999px; background: #fff; width: 200px; padding: 10px;}
-ul.thumb li div.hover {position: relative; left: 50%; top: 50%; z-index: 10; }
-ul.thumb li a:hover {
+ul.spkr li div {position: relative; left: -99999px; background: #fff; width: 200px; padding: 10px;}
+ul.spkr li div.hover {position: relative; left: 50%; top: 50%; z-index: 10; }
+ul.spkr li a:hover {
     border: none; /* Get rid of border on hover */
 }
 

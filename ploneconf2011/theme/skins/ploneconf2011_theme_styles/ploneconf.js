@@ -4,7 +4,7 @@
      function() { jq(this).removeClass("hover"); }
    );
 
-   jq("ul.thumb li").hover(function() {
+   jq("ul.spkr li").hover(function() {
 	jq(this).css({'z-index' : '10'}); /*Add a higher z-index value so this image stays on top*/ 
 	jq(this).find('div').addClass("hover").stop() /* Add class of "hover", then stop animation queue buildup*/
 		.animate({
