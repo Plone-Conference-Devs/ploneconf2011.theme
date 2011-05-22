@@ -6,7 +6,7 @@
 body {
     background-color: #e8ddcb;
     color: #ffffff;
-    font-family: 'MisoRegular', Arial, sans-serif;
+    font-family: 'MisoRegular', “Trebuchet MS”, Tahoma, Arial, sans-serif;
 }
 
 #visual-portal-wrapper {
@@ -79,7 +79,7 @@ h3 {
     border: none;
     color: #ffffff;
     font-size: 30px;
-    font-family: 'MisoRegular', Arial, sans-serif;
+    font-family: 'MisoRegular', “Trebuchet MS”, Tahoma, Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -91,11 +91,19 @@ h3 {
     background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
+    text-align: center;
+    width: auto;
+    padding: 50px 20px 0;
+    margin: -50px 0 0 -40px;
 }
 
 #portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
     border-style: none;
     color: #000;
+    font-size: .7em;
+}
+#portal-globalnav ul.submenu a:hover {
+    background: url(nav-hover.png) no-repeat center 4px; 
 }
 
 /* homepage slideshow */
@@ -122,7 +130,7 @@ h3 {
 }
 
 .imageCaption .imageTitle {
-    font-family: SkinBonesRegular, Arial, sans-serif;
+    font-family: SkinBonesRegular, DIN, Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 220%;
 }
 
