@@ -6,7 +6,7 @@
 body {
     background-color: #e8ddcb;
     color: #ffffff;
-    font-family: 'MisoRegular', “Trebuchet MS”, Tahoma, Arial, sans-serif;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 #visual-portal-wrapper {
@@ -76,34 +76,56 @@ h3 {
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
     background-color: transparent;
-    border: none;
+    border: 1px solid transparent;
     color: #ffffff;
     font-size: 30px;
-    font-family: 'MisoRegular', “Trebuchet MS”, Tahoma, Arial, sans-serif;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
     text-transform: uppercase;
+    min-width: 110px;
+    text-align: center;
+    padding: 10px 10px 0;
+}
+
+#portal-globalnav li.hover a {
+    background: rgba(255, 255, 255, 0.3) none;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
 }
 
 #portal-globalnav {
     float: right;
 }
 
-#portal-globalnav ul {
-    background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+#portal-globalnav ul,
+#portal-globalnav li.selected ul.submenu {
+    background: rgba(255, 255, 255, 0.3) url('dropdown_div.png') no-repeat scroll 12px 0px;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
+    border-width: 0 1px 1px 1px;
     text-align: center;
-    width: auto;
-    padding: 50px 20px 0;
-    margin: -50px 0 0 -40px;
+    width: 130px;
+    padding: 20px 0px 0;
+    margin: 0;
 }
 
-#portal-globalnav ul.submenu a, #portal-globalnav ul.submenu a:hover {
+#portal-globalnav ul.submenu a,
+#portal-globalnav ul.submenu a:hover,
+#portal-globalnav li.selected ul.submenu a {
     border-style: none;
     color: #000;
     font-size: .7em;
+    background: transparent none;
 }
-#portal-globalnav ul.submenu a:hover {
-    background: url(nav-hover.png) no-repeat center 4px; 
+#portal-globalnav ul.submenu a:hover,
+#portal-globalnav li.selected ul.submenu a:hover {
+    background: rgba(255, 255, 255, 0.6) none;
+}
+
+/* homepage */
+#home-text {
+    float: right;
+    width: 400px;
 }
 
 /* homepage slideshow */
