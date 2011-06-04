@@ -5,7 +5,7 @@ plone_skin:string=Plone Conference 2011 Theme
 logoName:string=logo.png
 
 fontFamily:string=Verdana, Arial, sans-serif
-fontBaseSize:string=24px
+fontBaseSize:string=20px
 fontColor:string=#333333
 fontSmallSize:string=18px
 
@@ -47,5 +47,5 @@ notifyBackgroundColor:string=#ffffe3
 discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
-columnOneWidth:string=25%
+columnOneWidth:string=17%
 columnTwoWidth:string=25%

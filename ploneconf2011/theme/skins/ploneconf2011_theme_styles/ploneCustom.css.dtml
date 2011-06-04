@@ -12,30 +12,31 @@ body {
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
-    /* background: transparent url('content_bg.png') repeat-y 300px top; */
+    background: transparent url('content_bg.png') repeat-y 155px top;
 }
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1em;
     color: #b31010;
+    letter-spacing: 1px;
 }
 
-h1 {
-    font-size: 72px;
+h1, h2 {
+    font-size: 48px;
 }
 
 h2 {
-    font-size: 48px;
+    margin-top: 25px;
 }
 
 h3 {
     font-size: 36px;
+    margin-top: 25px;
 }
 
 /* portal-top */
 #portal-top {
     height: 141px;
-    background: url("content_bg.png") repeat-y scroll 300px top transparent;
 }
 
 .section-front-page #portal-top {
@@ -71,7 +72,12 @@ h3 {
     top: 0;
 }
 
-#portal-globalnav,
+#portal-globalnav {
+    margin: 0;
+    background: transparent none;
+    font-size: 30px;
+}
+
 #portal-globalnav a,
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
@@ -122,7 +128,36 @@ h3 {
     background: rgba(255, 255, 255, 0.6) none;
 }
 
+/* footer */
+#footer {
+    clear: both;
+}
+
+/* subpage */
+#parent-fieldname-text p {
+    margin: 0;
+    padding: 1em;
+    color: #000000;
+    background: rgba(255, 255 ,255, 0.5);
+}
+
 /* homepage */
+.template-home_page_view #visual-portal-wrapper {
+    background: transparent none;
+}
+
+.template-home_page_view h2 {
+    font-size: 67px;
+}
+
+.template-home_page_view #parent-fieldname-text p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: transparent none;
+    font-size: 24px;
+}
+
 #home-text {
     float: right;
     width: 400px;
