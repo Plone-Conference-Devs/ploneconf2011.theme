@@ -14,8 +14,17 @@ body {
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
-body.template-home_page_view {
-    background: url('bg-frontpage.jpg');
+body.template-home_page_view, body.section-front-page {
+    background-image: url('bg-frontpage.jpg');
+}
+body.section-event {
+    background-image: url('bg-event.jpg');
+}
+body.section-about {
+    background-image: url('bg-about.jpg');
+}
+body.section-venue {
+    background-image: url('bg-venue.jpg');
 }
 
 #visual-portal-wrapper {
@@ -63,6 +72,13 @@ h3 {
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
+
+
+/* for some areas that are hard to see text on */
+.listing td.draggable, .listing .odd td.draggable {background: #333;}
+a:hover {color: #fff;}
+.documentByLine, .listing th {color: #ddd; font-weight: normal;}
+
 
 /* global nav */
 
@@ -198,11 +214,15 @@ h3 {
 }
 
 /* subpage */
+#content {
+    background: rgba(0,0,0, 0.7);
+}
+
+
 #parent-fieldname-text p {
     margin: 0;
     padding: 1em;
     color: #000000;
-    background: rgba(255, 255 ,255, 0.5);
 }
 
 /* homepage */
@@ -217,6 +237,8 @@ h3 {
 .template-home_page_view h2 {
     font-size: 67px;
 }
+
+.template-home_page_view #content {background: transparent none;}
 
 .template-home_page_view #parent-fieldname-text p {
     margin: 0;
