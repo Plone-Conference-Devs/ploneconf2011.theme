@@ -3,10 +3,19 @@
   <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
 */
 
+html {
+    background-color: #000000;
+}
+
 body {
-    background-color: #e8ddcb;
+    background-image: url('buildings_bg.png');
+    background-color: #000000;
     color: #ffffff;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+body.template-home_page_view {
+    background: url('bg-frontpage.jpg');
 }
 
 #visual-portal-wrapper {
@@ -55,7 +64,6 @@ h3 {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
-
 /* global nav */
 
 #globalnav-wrapper {
@@ -73,9 +81,9 @@ h3 {
 }
 
 #portal-globalnav {
-    margin: 0;
+    margin: 0 123px 0 0;
     background: transparent none;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #portal-globalnav a,
@@ -84,10 +92,10 @@ h3 {
     background-color: transparent;
     border: 1px solid transparent;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
     text-transform: uppercase;
-    min-width: 110px;
+    width: 90px;
     text-align: center;
     padding: 10px 10px 0;
 }
@@ -105,12 +113,12 @@ h3 {
 
 #portal-globalnav ul,
 #portal-globalnav li.selected ul.submenu {
-    background: rgba(255, 255, 255, 0.3) url('dropdown_div.png') no-repeat scroll 12px 0px;
+    background: rgba(255, 255, 255, 0.3) url('dropdown_div.png') no-repeat scroll 11px 0px;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
     border-width: 0 1px 1px 1px;
     text-align: center;
-    width: 130px;
+    width: 110px;
     padding: 20px 0px 0;
     margin: 0;
 }
@@ -221,6 +229,7 @@ h3 {
 #home-text {
     float: right;
     width: 400px;
+    margin-top: 250px;
 }
 
 /* homepage slideshow */
@@ -263,7 +272,8 @@ h3 {
 }
 
 body#content {
-    background-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
