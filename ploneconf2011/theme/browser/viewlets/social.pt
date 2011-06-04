@@ -1,0 +1,23 @@
+<div id="social-links">
+    <ul>
+        <li class="tw">
+            <a href="http://twitter.com/ploneconf" title="Twitter">
+                <span>&raquo; @ploneconf</span>
+            </a>
+        </li>
+        <li class="fl">
+            <a href="http://www.flickr.com/photos/tags/ploneconf2011/" title="Flickr">
+                <span>&raquo; Conf Pics!</span>
+            </a>
+        </li>
+        <li class="fb">
+            <a href="https://www.facebook.com/pages/PloneConf/146928208711324" title="Facebook">
+                <span>&raquo; Likey?</span>
+            </a>
+        </li>
+        <!--<li class="rss">
+            <a href="" title="RSS">
+                <span>&raquo; Teh Feedz</span>
+            </a>
+        </li>-->
+</div>

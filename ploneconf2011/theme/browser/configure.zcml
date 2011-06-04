@@ -34,7 +34,13 @@
       />
   
   <!-- Viewlets registration -->
-  <!-- Zope 3 browser resources -->
+  <browser:viewlet
+      name="ploneconf.social"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="viewlets/social.pt"
+      permission="zope.Public"
+      layer=".interfaces.IThemeSpecific"
+      />
 
  
 
