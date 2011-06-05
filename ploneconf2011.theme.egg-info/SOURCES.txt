@@ -56,6 +56,7 @@ ploneconf2011/theme/profiles/default/cssregistry.xml
 ploneconf2011/theme/profiles/default/jsregistry.xml
 ploneconf2011/theme/profiles/default/metadata.xml
 ploneconf2011/theme/profiles/default/ploneconf2011.theme_default.txt
+ploneconf2011/theme/profiles/default/portlets.xml
 ploneconf2011/theme/profiles/default/propertiestool.xml
 ploneconf2011/theme/profiles/default/rolemap.xml
 ploneconf2011/theme/profiles/default/skins.xml
@@ -75,10 +76,12 @@ ploneconf2011/theme/skins/ploneconf2011_theme_custom_images/logo.png
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_images/nav-hover.png
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_images/social.png
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_images/social_bg.png
+ploneconf2011/theme/skins/ploneconf2011_theme_custom_images/sponsor_image.png
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/CONTENT.txt
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/author.cpt
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/author.cpt.metadata
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/home_page_view.pt
+ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/info_portlet.pt
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/login_form.cpt
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/login_form.cpt.metadata
 ploneconf2011/theme/skins/ploneconf2011_theme_custom_templates/mail_password_form.pt

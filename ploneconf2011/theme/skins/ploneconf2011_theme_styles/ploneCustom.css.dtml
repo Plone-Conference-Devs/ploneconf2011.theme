@@ -18,13 +18,13 @@ body {
 body.template-home_page_view, body.section-front-page {
     background-image: url('bg-frontpage.jpg');
 }
-body.section-event {
+body.section-party {
     background-image: url('bg-event.jpg');
 }
-body.section-about {
+body.section-event {
     background-image: url('bg-about.jpg');
 }
-body.section-venue {
+body.section-location {
     background-image: url('bg-venue.jpg');
 }
 
@@ -34,6 +34,8 @@ body.section-venue {
     background: transparent url('bg-content.png') repeat-y 11px top;
     min-height: 500px;
 }
+body.section-front-page #visual-portal-wrapper {background: transparent;}
+body.section-front-page #info-portlet {display: none;}
 
 #portal-column-content {
     z-index: 4;
@@ -87,6 +89,7 @@ h4 {
 
 /* for some areas that are hard to see text on */
 .listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd {background: #333;}
+.ploneSkin table.mceLayout td.mceToolbar {background: #999;}
 a:hover, .reviewHistory, .contentHistory {color: #fff;}
 .documentByLine, .listing th {color: #ddd; font-weight: normal;}
 
@@ -132,8 +135,12 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     background: rgba(255, 255, 255, 0.3) none;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
-    border-width: 1px 1px 0 1px;
+    border-width: 1px 1px 0px 1px;
 }
+
+/* I'm not sure how to get the top nav items with no dropdown to have a bottom border */
+x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;} 
+
 
 #portal-globalnav {
     float: right;
@@ -289,6 +296,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     display: block;
     margin: -72px 0 0 47px;
     text-shadow: 0 0 10px #000000;
+    letter-spacing: 1px;
 }
 
 .largeCircle {
@@ -307,14 +315,23 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 .largeCircle h4 {
     color: #212A54;
     font-family: SkinBonesRegular,Arial,sans-serif;
+    letter-spacing: .5px;
 }
 .largeCircle a {
     font-size: 18px;
 }
 .smallCircle a:hover,
 .largeCircle a:hover {
-    color: #c30000;
+    color: #ff0000;
 }
+
+    body.section-event .largeCircle {border-color: #8a7c5e;}
+    body.section-event .largeCircle a, body.section-event .largeCircle h4 {color: #3b3022;}
+    body.section-event .smallCircle .imageWrapper {border-color: #837355; box-shadow: 0px 0px 3px #3b3022;}
+    body.section-event .largeCircle a:hover {color: #ff0000;}
+
+
+
 
 /* homepage */
 .template-home_page_view #social-links {
