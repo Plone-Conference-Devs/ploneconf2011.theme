@@ -1,3 +1,13 @@
-<!-- put in some logic to figure out what section you are in,
-and display a different background per section -->
+<div id="portal-footer">
 
+    <div id="los-sponseros"></div>
+
+    <ul id="footer-sitemap"
+        class="navTreeLevel0 visualNoMarker"
+        tal:define="view nocall:context/@@sitemap_view;">
+        <tal:sitemap replace="structure view/createSiteMap" />
+    </ul>
+
+    <div class="visualClear"><!-- --></div>
+
+</div>

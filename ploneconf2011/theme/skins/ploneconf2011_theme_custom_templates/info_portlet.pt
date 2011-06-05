@@ -1,0 +1,35 @@
+<div id="info-portlet" metal:define-macro="info">
+    <div class="largeCircle">
+        <h4>San Francisco</h4>
+        This November, host of the annual Plone Conference. Come celebrate the 10th anniversary of Plone. 
+        <ul>
+            <li>
+                <a href="" tal:attributes="href string:${context/portal_url}/location-info/travel">
+                   Travel &raquo;
+                </a>
+            </li>
+            <li>
+                <a href="" tal:attributes="href string:${context/portal_url}/location-info/lodging">
+                   Lodging &raquo;
+                </a>
+            </li>
+            <li>
+                <a href="" tal:attributes="href string:${context/portal_url}/location-info/venue">
+                   Venue &raquo;
+                </a>
+            </li>
+            <li>
+                <a href="" tal:attributes="href string:${context/portal_url}/party">
+                    Funtimes &raquo;
+                </a>
+            </li>
+    </div>
+    <div class="smallCircle">
+        <div class="imageWrapper">
+            <img src="" tal:attributes="src string:${context/portal_url}/sponsor_image.png" />
+        </div>
+        <a href="" tal:attributes="href string:${context/portal_url}/event/sponsor">
+            Sponsor Us!
+        </a>
+    </div>
+</div>
