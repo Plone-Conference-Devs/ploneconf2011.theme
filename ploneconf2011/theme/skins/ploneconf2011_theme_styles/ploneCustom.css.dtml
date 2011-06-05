@@ -148,14 +148,16 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 
 #portal-globalnav ul,
 #portal-globalnav li.selected ul.submenu {
-    background: rgba(255, 255, 255, 0.3) url('dropdown_div.png') no-repeat scroll 11px 0px;
+    background: rgba(255, 255, 255, 0.8)  no-repeat scroll 11px 0px;
+    /* url('dropdown_div.png')*/
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
     border-width: 0 1px 1px 1px;
     text-align: center;
     width: 110px;
-    padding: 20px 0px 0;
+    padding-bottom: 5px;
     margin: 0;
+    border-top:15px solid #fff;
 }
 
 #portal-globalnav ul.submenu a,
@@ -264,6 +266,9 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 /* subpage */
 #content {
     background: rgba(0,0,0, 0.7);
+    padding: 15px 20px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
 }
 
 
@@ -441,6 +446,15 @@ ul.spkr li div {position: relative; left: -99999px; background: #fff; width: 200
 ul.spkr li div.hover {position: relative; left: 50%; top: 50%; z-index: 10; }
 ul.spkr li a:hover {
     border: none; /* Get rid of border on hover */
+}
+
+#parent-fieldname-text blockquote.pullquote{
+    color: #ddd;
+}
+
+#edit-bar{
+    /* this is so the cranes don't eat the edit bar */
+    width: 75%;
 }
 
 
