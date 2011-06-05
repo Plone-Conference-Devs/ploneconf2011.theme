@@ -168,15 +168,15 @@
         </div>
         <!--         </tal:notajax> -->
     </div>
-
-
-    <metal:block i18n:domain="plone" tal:condition="not:ajax_load">
-    <div id="footer">
-        <div tal:replace="structure provider:plone.portalfooter" />
-    </div>
-    </metal:block>
+    
+    <div class="visualClear"><!-- --></div>
 
 </div>
+<metal:block i18n:domain="plone" tal:condition="not:ajax_load">
+<div id="footer">
+    <div tal:replace="structure provider:plone.portalfooter" />
+</div>
+</metal:block>
 </body>
 </html>
 
