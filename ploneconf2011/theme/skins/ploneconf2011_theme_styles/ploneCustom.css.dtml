@@ -263,7 +263,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 #parent-fieldname-text p {
     margin: 0;
     padding: 1em;
-    color: #000000;
+    color: #fff;
 }
 
 /* portlet */
