@@ -25,7 +25,7 @@ body.section-party {
 body.section-event {
     background-image: url('bg-about.jpg');
 }
-body.section-location {
+body.section-location-info {
     background-image: url('bg-venue.jpg');
 }
 
@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1em;
     color: #b31010;
     letter-spacing: 1px;
+    font-weight: normal;
 }
 
 h1, h2 {
@@ -238,6 +239,12 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 .portlet .portletItem, .portletError dd {padding: 0px;}
 .portlet dt a, .portlet dt a:visited, .portlet dt a:hover {color: #ee6a23; font-weight: normal;}
 .portletItemDetails {margin: 0 0 1em; padding: 0px;}
+.portletStaticText p {color: #aeaeae;}
+.portletStaticText b {color: #ff0013; font-weight: normal;}
+.portletStaticText h3 {color: #fff; font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif; font-size: 24px; letter-spacing: 0;}
+.portletStaticText h3:first-child {margin-top: 0px;}
+.portletStaticText a {text-align: right;}
+
 
 /* three col area on front page */
 .section-front-page div.prefix_3 {margin-left: -100%;}
@@ -245,7 +252,7 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 .section-front-page .portlet {width: 270px; margin: 0 50px 0 0; float: left;}
 
 .portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px;}
-.portletTwitterPortlet .portletItemDetails {font-size: 14px; text-align: right;}
+.portletTwitterPortlet .portletItemDetails {font-size: 14px; text-align: right; color: #aeaeae;}
 
 
 /* footer */
@@ -358,6 +365,18 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     body.section-event .smallCircle .imageWrapper {border-color: #837355; box-shadow: 0px 0px 3px #3b3022;}
     body.section-event .largeCircle a:hover {color: #ff0000;}
 
+    body.section-location-info .largeCircle {border-color: #1196d2;}
+    body.section-location-info .largeCircle a, body.section-event .largeCircle h4 {color: #01264e;}
+    body.section-location-info .smallCircle .imageWrapper {border-color: #0f8ec8; box-shadow: 0px 0px 3px #0b86be;}
+    body.section-location-info .largeCircle a:hover {color: #ff0000;}
+    body.section-location-info #social-links {background-image: url(social_bg-location.png);}
+
+    body.section-party .largeCircle {border-color: #878b97;}
+    body.section-party .largeCircle a, body.section-event .largeCircle h4 {color: #01264e;}
+    body.section-party .smallCircle .imageWrapper {border-color: #7b7f8d; box-shadow: 0px 0px 3px #6f7484;}
+    body.section-party .largeCircle a:hover {color: #ff0000;}
+    body.section-party #social-links {background-image: url(social_bg-party.png);}
+
 
 
 
@@ -389,8 +408,9 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 #home-text {
     float: right;
     width: 400px;
-    margin-top: 250px;
+    margin-top: 255px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    margin-bottom: 4em;
 }
 
 /* homepage slideshow */
@@ -418,17 +438,21 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 
 .imageCaption .imageTitle {
     font-family: SkinBonesRegular, DIN, Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 4em;
+    font-size: 4.5em;
     letter-spacing: 1px;
     margin-bottom: 0.25em;
+    font-weight: normal;
 }
 
 .imageCaption .imageDescrip {
     padding: 10px 0 0 25px;
-    font-size: 27px;
+    font-size: 30px;
     line-height: 25px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
+
+.slideimage3 .imageCaption {margin-top: 100px;}
+.slideimage3 .imageCaption .imageDescrip {color: #000;}
 
 /* authoring */
 #content .configlets li {
