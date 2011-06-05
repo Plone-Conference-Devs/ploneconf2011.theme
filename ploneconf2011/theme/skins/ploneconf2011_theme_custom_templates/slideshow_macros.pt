@@ -31,7 +31,7 @@
   
     <div id="slideshow" class="pics"> 
         <tal:rep repeat="image images">
-          <div class="slideContainer">
+          <div class="slideContainer" tal:attributes="class string:slideContainer slideimage${repeat/image/number}">
               <tal:def define="title image/Title;
                                description image/Description;
                                url image/getURL;
