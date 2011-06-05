@@ -34,6 +34,12 @@ body.section-venue {
     min-height: 500px;
 }
 
+#portal-column-content {
+    z-index: 4;
+    /*background: transparent url('content_bg.png') repeat-y top; */
+    /* add bg here to overlap portlet, needs work */
+}
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1em;
     color: #b31010;
@@ -51,6 +57,9 @@ h2 {
 h3 {
     font-size: 36px;
     margin-top: 25px;
+}
+h4 {
+    font-size: 28px;
 }
 
 /* portal-top */
@@ -251,6 +260,56 @@ a:hover {color: #fff;}
     margin: 0;
     padding: 1em;
     color: #000000;
+}
+
+/* portlet */
+#info-portlet {
+    margin: 90px 0 0 -60px;
+}
+.smallCircle {
+    color: #212A54;
+    position: absolute;
+    margin-top: -392px;
+}
+.smallCircle .imageWrapper {
+    border: 18px solid #3F518A;
+    border-radius: 90px;
+    height: 116px;
+    width: 116px;
+    overflow: hidden;
+}
+.smallCircle a {
+    color: #ffffff;
+    font-family: SkinBonesRegular,Arial,sans-serif;
+    font-size: 32px;
+    display: block;
+    margin: -72px 0 0 47px;
+    text-shadow: 0 0 10px #000000;
+}
+
+.largeCircle {
+    background-color: #FFFFFF;
+    border: 30px solid #3F518A;
+    border-radius: 180px;
+    color: #212A54;
+    height: 207px;
+    width: 140px;
+    padding: 50px 53px 0 55px;
+}
+.largeCircle li {
+    display: list-item;
+}
+.largeCircle a,
+.largeCircle h4 {
+    color: #212A54;
+    font-family: SkinBonesRegular,Arial,sans-serif;
+}
+.largeCircle a {
+    font-size: 18px;
+}
+.smallCircle a:hover,
+.largeCircle a:hover {
+    color: #c30000;
 }
 
 /* homepage */

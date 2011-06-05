@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<portlets>
+ <assignment name="info_portlet" category="context" key="/"
+    manager="plone.leftcolumn" type="portlets.Classic" visible="True">
+  <property name="macro">info</property>
+  <property name="template">info_portlet</property>
+ </assignment>
+</portlets>
