@@ -10,7 +10,7 @@ html {
 body {
     background-image: url('buildings_bg.png');
     background-color: #000000;
-    color: #ffffff;
+    color: #fff;
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
     min-width: 1100px;
     font-size: 14px;
@@ -303,7 +303,7 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 #parent-fieldname-text p {
     margin: 0;
     padding: 1em;
-    color: #fff;
+    color: #eee;
 }
 
 /* portlet */
@@ -485,6 +485,13 @@ ul.spkr li a:hover {
     width: 75%;
 }
 
+.documentDescription{
+    font-size: 1.3em;
+    color: #fff;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 20px solid #eee;
+}
 
 <dtml-comment> adding some color for @@manage-viewlets</dtml-comment>
 
