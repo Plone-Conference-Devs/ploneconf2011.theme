@@ -2,22 +2,22 @@
     <ul>
         <li class="tw">
             <a href="http://twitter.com/ploneconf" title="Twitter">
-                <span>&laquo; @ploneconf</span>
+                <span>&laquo; Twitter</span>
             </a>
         </li>
         <li class="fl">
             <a href="http://www.flickr.com/photos/tags/ploneconf2011/" title="Flickr">
-                <span>&laquo; Conf Pics!</span>
+                <span>&laquo; Flickr</span>
             </a>
         </li>
         <li class="fb">
             <a href="https://www.facebook.com/pages/PloneConf/146928208711324" title="Facebook">
-                <span>&laquo; Likey?</span>
+                <span>&laquo; Facebook</span>
             </a>
         </li>
-        <!--<li class="rss">
-            <a href="" title="RSS">
-                <span>&laquo; Teh Feedz</span>
+        <li class="rss">
+            <a tal:attributes="href string:${context/@@plone_portal_state/portal_url}/search_rss?portal_type=News+Item&review_state=published" title="RSS">
+                <span>&laquo; News Feed</span>
             </a>
-        </li>-->
+        </li>
 </div>
