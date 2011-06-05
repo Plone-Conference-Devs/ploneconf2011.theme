@@ -12,6 +12,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    min-width: 1100px;
 }
 
 body.template-home_page_view, body.section-front-page {
@@ -30,7 +31,7 @@ body.section-venue {
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
-    background: transparent url('content_bg.png') repeat-y 155px top;
+    background: transparent url('bg-content.png') repeat-y 11px top;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,11 +63,11 @@ h3 {
 }
 
 #portal-logo  {
-    margin: 0px 0px 10px;
+    margin: -10px 0 10px;
 }
 
 #plone-logo {
-    position: fixed; left: 0; top: 50px; 
+    position: fixed; left: 10px; top: 0px; 
     box-shadow: 0px 0px 0px rgb(0,0,0); /* for IE? */
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
@@ -75,8 +76,8 @@ h3 {
 
 
 /* for some areas that are hard to see text on */
-.listing td.draggable, .listing .odd td.draggable {background: #333;}
-a:hover {color: #fff;}
+.listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd {background: #333;}
+a:hover, .reviewHistory, .contentHistory {color: #fff;}
 .documentByLine, .listing th {color: #ddd; font-weight: normal;}
 
 
@@ -160,6 +161,7 @@ a:hover {color: #fff;}
     height: 175px;
     margin: 69px 0 0 85.5%;
 }
+.section-front-page #social-links {display: none;}
 #social-links ul {
     margin: 17px 0 0 30px;
 }
@@ -216,13 +218,22 @@ a:hover {color: #fff;}
 /* subpage */
 #content {
     background: rgba(0,0,0, 0.7);
+    padding: 0.5em;
+    marign: 0;
+}
+
+x #portal-columns {
+    border-collapse: collapse;
+    left: 300px;
+    position: relative;
+    width: 650px;
 }
 
 
 #parent-fieldname-text p {
     margin: 0;
     padding: 1em;
-    color: #000000;
+    color: #fff;
 }
 
 /* homepage */
