@@ -11,8 +11,9 @@ body {
     background-image: url('buildings_bg.png');
     background-color: #000000;
     color: #ffffff;
-    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
     min-width: 1100px;
+    font-size: 14px;
 }
 
 body.template-home_page_view, body.section-front-page {
@@ -34,7 +35,8 @@ body.section-location {
     background: transparent url('bg-content.png') repeat-y 11px top;
     min-height: 500px;
 }
-body.section-front-page #visual-portal-wrapper {background: transparent;}
+body.section-front-page #visual-portal-wrapper,
+body.section-front-page #content {background: transparent;}
 body.section-front-page #info-portlet {display: none;}
 
 #portal-column-content {
@@ -65,6 +67,9 @@ h4 {
     font-size: 28px;
 }
 
+.miso {font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;}
+
+
 /* portal-top */
 #portal-top {
     height: 141px;
@@ -75,7 +80,7 @@ h4 {
 }
 
 #portal-logo  {
-    margin: -10px 0px 10px;
+    margin: -10px 0px 10px -25px;
 }
 
 #plone-logo {
@@ -140,7 +145,6 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 /* I'm not sure how to get the top nav items with no dropdown to have a bottom border */
 x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;} 
-
 
 #portal-globalnav {
     float: right;
@@ -231,6 +235,21 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     background-position: 0 -251px;
 }
 
+/* ----- portlets ----- */
+.portlet dt, .portletAssignments .portletHeader {background: transparent; font-family: SkinBonesRegular, Arial, sans-serif; color: #ee6a23; padding: 0px; font-size: 48px; letter-spacing: .5px; font-weight: normal;}
+.portlet .portletItem, .portletError dd {padding: 0px;}
+.portlet dt a, .portlet dt a:visited, .portlet dt a:hover {color: #ee6a23; font-weight: normal;}
+.portletItemDetails {margin: 0 0 1em; padding: 0px;}
+
+/* three col area on front page */
+.section-front-page div.prefix_3 {margin-left: -100%;}
+.section-front-page #portlets-below {width: 960px;}
+.section-front-page .portlet {width: 270px; margin: 0 50px 0 0; float: left;}
+
+.portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px;}
+.portletTwitterPortlet .portletItemDetails {font-size: 14px; text-align: right;}
+
+
 /* footer */
 #footer {
     clear: both;
@@ -244,8 +263,10 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 }
 #footer-sitemap {
     font-size: 24px;
-    width: 480px;
-    margin: 0 auto;
+    width: 325px;
+    margin: 0 0;
+    line-height: 1em;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 #footer-sitemap a,
 #footer-sitemap a:visited {
@@ -256,12 +277,19 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 }
 #footer-sitemap.navTreeLevel0 > li {
     float: left;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    min-height: 150px;
+    min-width: 150px;
 }
 
 #footer-sitemap .navTreeLevel2 a {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+    color: #aeaeae;
 }
+#footer-sitemap .navTreeLevel2 a:hover {color: &dtml-linkHoverColor;;}
 
 /* subpage */
 #content {

@@ -1,7 +1,7 @@
 <div id="info-portlet" metal:define-macro="info">
     <div class="largeCircle">
         <h4>San Francisco</h4>
-        This November, host of the annual Plone Conference. Come celebrate the 10th anniversary of Plone. 
+        <span class="miso">This November, host of the annual Plone Conference. Come celebrate the 10th anniversary of Plone. </span>
         <ul>
             <li>
                 <a href="" tal:attributes="href string:${context/portal_url}/location-info/travel">
