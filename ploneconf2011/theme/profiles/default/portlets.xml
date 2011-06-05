@@ -5,4 +5,11 @@
   <property name="macro">info</property>
   <property name="template">info_portlet</property>
  </assignment>
+  <assignment name="news" category="context" key="/"
+    manager="plone.rightcolumn" type="portlets.News" visible="False">
+  <property name="count">5</property>
+  <property name="state">
+   <element>published</element>
+  </property>
+ </assignment>
 </portlets>
