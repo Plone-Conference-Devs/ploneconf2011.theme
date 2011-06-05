@@ -382,12 +382,15 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     color: #ffffff;
     background: transparent none;
     font-size: 24px;
+    line-height: 20pt;
 }
+.template-home_page_view #parent-fieldname-text p b {color: #ff0012; font-weight: normal;}
 
 #home-text {
     float: right;
     width: 400px;
     margin-top: 250px;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 /* homepage slideshow */
@@ -415,13 +418,16 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 
 .imageCaption .imageTitle {
     font-family: SkinBonesRegular, DIN, Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 220%;
+    font-size: 4em;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
 }
 
 .imageCaption .imageDescrip {
     padding: 10px 0 0 25px;
     font-size: 27px;
     line-height: 25px;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 /* authoring */
