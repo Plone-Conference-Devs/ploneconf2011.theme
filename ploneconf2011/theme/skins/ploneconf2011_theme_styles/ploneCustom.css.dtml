@@ -12,16 +12,35 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    min-width: 1100px;
 }
 
-body.template-home_page_view {
-    background: url('bg-frontpage.jpg');
+body.template-home_page_view, body.section-front-page {
+    background-image: url('bg-frontpage.jpg');
+}
+body.section-party {
+    background-image: url('bg-event.jpg');
+}
+body.section-event {
+    background-image: url('bg-about.jpg');
+}
+body.section-location {
+    background-image: url('bg-venue.jpg');
 }
 
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
-    background: transparent url('content_bg.png') repeat-y 155px top;
+    background: transparent url('bg-content.png') repeat-y 11px top;
+    min-height: 500px;
+}
+body.section-front-page #visual-portal-wrapper {background: transparent;}
+body.section-front-page #info-portlet {display: none;}
+
+#portal-column-content {
+    z-index: 4;
+    /*background: transparent url('content_bg.png') repeat-y top; */
+    /* add bg here to overlap portlet, needs work */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,6 +61,9 @@ h3 {
     font-size: 36px;
     margin-top: 25px;
 }
+h4 {
+    font-size: 28px;
+}
 
 /* portal-top */
 #portal-top {
@@ -53,16 +75,25 @@ h3 {
 }
 
 #portal-logo  {
-    margin: 0px 0px 10px;
+    margin: -10px 0px 10px;
 }
 
 #plone-logo {
-    position: fixed; left: 0; top: 50px; 
+    position: fixed; left: 10px; top: 0px; 
     box-shadow: 0px 0px 0px rgb(0,0,0); /* for IE? */
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
+
+
+/* for some areas that are hard to see text on */
+.listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd {background: #333;}
+.ploneSkin table.mceLayout td.mceToolbar {background: #999;}
+a:hover, .reviewHistory, .contentHistory {color: #fff;}
+.documentByLine, .listing th {color: #ddd; font-weight: normal;}
+
+
 
 /* global nav */
 
@@ -104,8 +135,12 @@ h3 {
     background: rgba(255, 255, 255, 0.3) none;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
-    border-width: 1px 1px 0 1px;
+    border-width: 1px 1px 0px 1px;
 }
+
+/* I'm not sure how to get the top nav items with no dropdown to have a bottom border */
+x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;} 
+
 
 #portal-globalnav {
     float: right;
@@ -144,6 +179,8 @@ h3 {
     height: 175px;
     margin: 69px 0 0 85.5%;
 }
+.section-front-page #social-links {display: none;}
+
 #social-links ul {
     margin: 17px 0 0 30px;
 }
@@ -195,15 +232,106 @@ h3 {
 /* footer */
 #footer {
     clear: both;
+    background-color: #000000;
+    box-shadow: 0 -20px 40px #000000;
+}
+#portal-footer {
+    width: 965px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+#footer-sitemap {
+    font-size: 24px;
+    width: 480px;
+    margin: 0 auto;
+}
+#footer-sitemap a,
+#footer-sitemap a:visited {
+    color: #ffffff;
+}
+#footer-sitemap a:hover {
+    color: &dtml-linkHoverColor;;
+}
+#footer-sitemap.navTreeLevel0 > li {
+    float: left;
+    margin-right: 30px;
+}
+
+#footer-sitemap .navTreeLevel2 a {
+    font-size: 16px;
 }
 
 /* subpage */
+#content {
+    background: rgba(0,0,0, 0.7);
+}
+
+
 #parent-fieldname-text p {
     margin: 0;
     padding: 1em;
-    color: #000000;
-    background: rgba(255, 255 ,255, 0.5);
+    color: #fff;
 }
+
+/* portlet */
+#info-portlet {
+    margin: 90px 0 0 -60px;
+}
+.smallCircle {
+    color: #212A54;
+    position: absolute;
+    margin-top: -392px;
+}
+.smallCircle .imageWrapper {
+    border: 18px solid #3F518A;
+    border-radius: 90px;
+    height: 116px;
+    width: 116px;
+    overflow: hidden;
+}
+.smallCircle a {
+    color: #ffffff;
+    font-family: SkinBonesRegular,Arial,sans-serif;
+    font-size: 32px;
+    display: block;
+    margin: -72px 0 0 47px;
+    text-shadow: 0 0 10px #000000;
+    letter-spacing: 1px;
+}
+
+.largeCircle {
+    background-color: #FFFFFF;
+    border: 30px solid #3F518A;
+    border-radius: 180px;
+    color: #212A54;
+    height: 207px;
+    width: 140px;
+    padding: 50px 53px 0 55px;
+}
+.largeCircle li {
+    display: list-item;
+}
+.largeCircle a,
+.largeCircle h4 {
+    color: #212A54;
+    font-family: SkinBonesRegular,Arial,sans-serif;
+    letter-spacing: .5px;
+}
+.largeCircle a {
+    font-size: 18px;
+}
+.smallCircle a:hover,
+.largeCircle a:hover {
+    color: #ff0000;
+}
+
+    body.section-event .largeCircle {border-color: #8a7c5e;}
+    body.section-event .largeCircle a, body.section-event .largeCircle h4 {color: #3b3022;}
+    body.section-event .smallCircle .imageWrapper {border-color: #837355; box-shadow: 0px 0px 3px #3b3022;}
+    body.section-event .largeCircle a:hover {color: #ff0000;}
+
+
+
 
 /* homepage */
 .template-home_page_view #social-links {
@@ -217,6 +345,8 @@ h3 {
 .template-home_page_view h2 {
     font-size: 67px;
 }
+
+.template-home_page_view #content {background: transparent none;}
 
 .template-home_page_view #parent-fieldname-text p {
     margin: 0;

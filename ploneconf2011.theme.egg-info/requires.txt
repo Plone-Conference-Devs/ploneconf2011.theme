@@ -1,0 +1,5 @@
+setuptools
+z3c.jbot
+plonetheme.basic
+collective.easyslideshow
+webcouturier.dropdownmenu

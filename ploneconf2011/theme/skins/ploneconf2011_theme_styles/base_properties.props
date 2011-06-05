@@ -4,7 +4,7 @@ plone_skin:string=Plone Conference 2011 Theme
 
 logoName:string=logo.png
 
-fontFamily:string=Verdana, Arial, sans-serif
+fontFamily:string='MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif
 fontBaseSize:string=20px
 fontColor:string=#333333
 fontSmallSize:string=18px
@@ -13,10 +13,10 @@ backgroundColor:string=#ffffff
 primaryColor:string=#205C90
 neutralColor:string=#dddddd
 
-linkColor:string=#205C90
-linkHoverColor:string=#ffffff
-linkActiveColor:string=#205C90
-linkVisitedColor:string=#205C90
+linkColor:string=#ff0000
+linkHoverColor:string=#ee6a23
+linkActiveColor:string=#ffffff
+linkVisitedColor:string=#ff0000
 
 borderWidth:string=1px
 borderStyle:string=solid
@@ -39,7 +39,7 @@ textTransform:string=none
 highlightColor:string=#ffffe0
 
 evenRowBackgroundColor:string=transparent
-oddRowBackgroundColor:string=#eeeeee
+oddRowBackgroundColor:string=#333
 
 notifyBorderColor:string=#9C6E3D
 notifyBackgroundColor:string=#ffffe3
