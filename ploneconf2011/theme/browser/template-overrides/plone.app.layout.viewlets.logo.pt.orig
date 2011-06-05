@@ -1,0 +1,20 @@
+<div metal:define-macro="portal_logo"
+     tal:attributes="class string:cell prefix_0 grid_width_is_4" > 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9597dd8bcc681c327739561b98a3db7a9c515958
+<a id="portal-logo"
+   title="Home"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url"
+   i18n:domain="plone"
+   i18n:attributes="title">
+    <img src="logo.jpg" alt=""
+         tal:replace="structure view/logo_tag" /></a>
+<<<<<<< HEAD
+
+	<div id="plone-logo"><a href="http://plone.org" title="Plone.org"><img src="logo-plone.jpg" alt="Plone" /></a></div>
+=======
+>>>>>>> 9597dd8bcc681c327739561b98a3db7a9c515958
+</div>
