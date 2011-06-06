@@ -12,7 +12,7 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-    min-width: 1100px;
+    min-width: 1350px;
     font-size: 14px;
 }
 
@@ -36,7 +36,8 @@ body.section-location-info {
     min-height: 500px;
 }
 body.section-front-page #visual-portal-wrapper,
-body.section-front-page #content {background: transparent;}
+body.section-front-page #content {background: transparent; padding: 0px;}
+body.section-front-page #portal-column-content {width: 100%;}
 body.section-front-page #info-portlet {display: none;}
 
 #portal-column-content {
@@ -44,6 +45,8 @@ body.section-front-page #info-portlet {display: none;}
     /*background: transparent url('content_bg.png') repeat-y top; */
     /* add bg here to overlap portlet, needs work */
 }
+div.position_0 {margin-left: -100%;}
+div.prefix_3 {margin-left: -68%;}
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1em;
@@ -141,7 +144,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     background: rgba(255, 255, 255, 0.3) none;
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
-    border-width: 1px 1px 0px 1px;
+    border-width: 1px 1px 1px 1px;
 }
 
 /* I'm not sure how to get the top nav items with no dropdown to have a bottom border */
@@ -184,7 +187,7 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     position: absolute;
     width: 210px;
     height: 175px;
-    margin: 69px 0 0 85.5%;
+    margin: 69px 0 0 95.5%;
 }
 .section-front-page #social-links {display: none;}
 
@@ -199,16 +202,16 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     display: block;
     height: 33px;
     background: transparent url('social.png') no-repeat;
-    font-family: SkinBonesRegular, Arial, sans-serif;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
     text-transform: uppercase;
     padding-left:38px;
-    font-size: 30px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 38px;
     color: #ffffff;
 }
 #social-links a span {
-    box-shadow: 0 0 15px #333333;
-    background-color: rgba(51, 51, 51, 0.5);
+    box-shadow: 0 0 10px #333333;
+    background-color: rgba(51, 51, 51, 0.55);
     visibility: hidden;
 }
 #social-links a:hover span {
@@ -251,9 +254,10 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 /* three col area on front page */
 .section-front-page div.prefix_3 {margin-left: -100%;}
 .section-front-page #portlets-below {width: 960px;}
-.section-front-page .portlet {width: 270px; margin: 0 50px 0 0; float: left;}
+.section-front-page .portlet {width: 285px; margin: 0 50px 0 0; float: left;}
+.section-front-page .portlet.portletTwitterPortlet {margin-right: 0px;}
 
-.portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px;}
+.portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px; margin-top: -2px; padding-top: 2px;}
 .portletTwitterPortlet .portletItemDetails {font-size: 14px; text-align: right; color: #aeaeae;}
 
 
@@ -265,7 +269,8 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 }
 #portal-footer {
     width: 965px;
-    margin: 0 auto;
+    margin: 3em auto 0;
+    padding: 3em 0 0;
     background-color: #000000;
 }
 #footer-sitemap {
@@ -366,18 +371,18 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
 }
 
     body.section-event .largeCircle {border-color: #8a7c5e;}
-    body.section-event .largeCircle a, body.section-event .largeCircle h4 {color: #3b3022;}
+    body.section-event .largeCircle a, body.section-event .largeCircle h4, body.section-event .largeCircle span {color: #3b3022;}
     body.section-event .smallCircle .imageWrapper {border-color: #837355; box-shadow: 0px 0px 3px #3b3022;}
     body.section-event .largeCircle a:hover {color: #ff0000;}
 
     body.section-location-info .largeCircle {border-color: #1196d2;}
-    body.section-location-info .largeCircle a, body.section-event .largeCircle h4 {color: #01264e;}
+    body.section-location-info .largeCircle a, body.section-location-info .largeCircle h4, body.section-location-info .largeCircle span {color: #01264e;}
     body.section-location-info .smallCircle .imageWrapper {border-color: #0f8ec8; box-shadow: 0px 0px 3px #0b86be;}
     body.section-location-info .largeCircle a:hover {color: #ff0000;}
     body.section-location-info #social-links {background-image: url(social_bg-location.png);}
 
     body.section-party .largeCircle {border-color: #878b97;}
-    body.section-party .largeCircle a, body.section-event .largeCircle h4 {color: #01264e;}
+    body.section-party .largeCircle a, body.section-party .largeCircle h4, body.section-party .largeCircle span {color: #01264e;}
     body.section-party .smallCircle .imageWrapper {border-color: #7b7f8d; box-shadow: 0px 0px 3px #6f7484;}
     body.section-party .largeCircle a:hover {color: #ff0000;}
     body.section-party #social-links {background-image: url(social_bg-party.png);}
