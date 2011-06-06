@@ -12,7 +12,6 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-    min-width: 1350px;
     font-size: 14px;
 }
 
@@ -277,7 +276,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 #sitemap-wrap{
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background-color: #222;
+    background-color: #111;
     padding: 20px;
     padding-bottom: 0px;
     display: inline-block;
@@ -575,6 +574,60 @@ ul.spkr li a:hover {
 #colophon li{
     padding-right:15px;
 }
+
+
+#portal-column-one dl.portletNavigationTree dt,
+#portal-column-one dl.portletNavigationTree dt a {
+        display:none;
+    }
+
+
+#portal-column-one dl.portletNavigationTree{
+    margin-left: 145px;
+    margin-top: 80px;
+    padding-top: 15px;
+    background: rgba(0,0,0, 0.7);
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width : 180px;
+    height: 300px;
+    font-size: 1.5em;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#portal-column-one dl.portletNavigationTree li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+
+#portal-column-one dl.portletNavigationTree li a{
+    color: #EE6A23;
+}
+
+#portal-column-one dl.portletNavigationTree li a:after{
+    content: ">>";
+}
+
+#portal-column-one dl.portletNavigationTree li a:hover{
+    color: #fff;
+}
+
+#portal-column-one dl.portletNavigationTree .navTreeCurrentItem{
+    background-color: transparent;
+}
+
+#portal-column-one dl.portletNavigationTree .navTreeCurrentNode a{
+    color: #fff;
+}
+
+#info-portlet{
+    margin-top: -110px;
+}
+
 
 /* -------------------------------------- */
 
