@@ -33,7 +33,10 @@ body.section-location-info {
     margin: 0 auto;
     background: transparent url('bg-content.png') repeat-y 11px top;
     min-height: 650px;
+    margin-left: 25px;
+    padding-right: 80px;
 }
+
 body.section-front-page #visual-portal-wrapper,
 body.section-front-page #content {background: transparent; padding: 0px;}
 body.section-front-page #content {margin-top: 150px;}

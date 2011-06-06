@@ -25,7 +25,7 @@
                 </li>
                 <li><span>
                     <a tal:attributes="href 
-                    string:${context/@@plone_portal_state/portal_url}/privacy" 
+                    string:${context/@@plone_portal_state/portal_url}/terms" 
                     title="Terms and Conditions">Terms &amp; Conditions</a>
                     </span>
                 </li>
