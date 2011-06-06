@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url('buildings_bg.png');
+    background-image: url('bg-frontpage.jpg');
     background-color: #000000;
     color: #fff;
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
@@ -317,12 +317,11 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     margin: 90px 0 0 -60px;
 }
 .smallCircle {
-    color: #212A54;
     position: absolute;
     margin-top: -392px;
 }
 .smallCircle .imageWrapper {
-    border: 18px solid #3F518A;
+    border: 18px solid #33433d;
     border-radius: 90px;
     height: 116px;
     width: 116px;
@@ -343,9 +342,9 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 .largeCircle {
     background-color: #FFFFFF;
-    border: 30px solid #3F518A;
+    border: 30px solid #3c4d47;
     border-radius: 180px;
-    color: #212A54;
+    color: #293833;
     height: 207px;
     width: 140px;
     padding: 50px 53px 0 55px;
@@ -355,7 +354,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 }
 .largeCircle a,
 .largeCircle h4 {
-    color: #212A54;
+    color: #293833;
     font-family: SkinBonesRegular,Arial,sans-serif;
     letter-spacing: .5px;
 }
