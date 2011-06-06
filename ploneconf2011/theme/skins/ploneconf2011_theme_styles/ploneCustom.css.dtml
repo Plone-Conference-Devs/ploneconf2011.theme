@@ -629,7 +629,7 @@ ul.spkr li a:hover {
 }
 
 #portal-column-one dl.portletNavigationTree li a:after{
-    content: ">>";
+    content: "\00BB";
 }
 
 #portal-column-one dl.portletNavigationTree li a:hover{
