@@ -88,7 +88,7 @@ h4 {
 }
 
 #plone-logo {
-    position: fixed; right: 10px; top: 0px; 
+    position: absolute; right: -720px; top: 0px; 
     box-shadow: 0px 0px 0px rgb(0,0,0); /* for IE? */
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
@@ -177,9 +177,9 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 /* social links viewlet */
 #social-links {
-    /* background: transparent url('social_bg.png') no-repeat; */
+    /*background: transparent url('social_bg.png') no-repeat;*/ 
     position: absolute;
-    width: 50px;
+    width: 90px;
     height: 175px;
     margin: 139px 0 0 95.5%;
 }
@@ -603,13 +603,13 @@ ul.spkr li a:hover {
 
 
 #portal-column-one dl.portletNavigationTree{
-    margin-left: 145px;
+    margin-left: 125px;
     margin-top: 80px;
     padding-top: 15px;
     background: rgba(0,0,0, 0.7);
     -moz-border-radius: 15px;
     border-radius: 15px;
-    width : 180px;
+    width : 200px;
     height: 300px;
     font-size: 1.5em;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
@@ -645,7 +645,9 @@ ul.spkr li a:hover {
 }
 
 #info-portlet{
-    margin-top: -110px;
+    position: absolute;
+    top: 275px;
+    left: 60px; 
 }
 
 
