@@ -31,7 +31,7 @@ body.section-location-info {
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
-    /*background: transparent url('bg-content.png') repeat-y 11px top;*/
+    background: transparent url('bg-content.png') repeat-y 11px top;
     min-height: 500px;
 }
 body.section-front-page #visual-portal-wrapper,
