@@ -264,11 +264,8 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
     margin-top: 10px;
     text-align: center;
-    /* 
-    KLUDGE: this is not exact but this will change anyways once we have 
-    sponsorships so I'm not too worried about it at the moment
-    */
-    margin-left: 22%;
+    
+   
 }
 
 
@@ -280,6 +277,12 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 #footer-sitemap {
     line-height: 1em; 
     text-align: left;
+    /* 
+    KLUDGE: this is not exact but this will change anyways once we have 
+    sponsorships so I'm not too worried about it at the moment
+    */
+     margin-left: 30%;
+    
 }
 
 #sitemap-wrap{
@@ -288,7 +291,10 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     background-color: #111;
     padding: 20px;
     padding-bottom: 0px;
-    display: inline-block;
+    
+    /* uncomment to have the footer not span the whole page
+       display: inline-block;
+    */
 }
 
 #footer-sitemap a,
