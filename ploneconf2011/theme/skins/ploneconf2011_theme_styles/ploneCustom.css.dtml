@@ -207,8 +207,7 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     color: #ffffff;
 }
 #social-links a span {
-    box-shadow: 0 0 15px #333333;
-    background-color: rgba(51, 51, 51, 0.5);
+    text-shadow: 0 0 15px #000000;
     visibility: hidden;
 }
 #social-links a:hover span {
@@ -329,6 +328,9 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     width: 116px;
     overflow: hidden;
 }
+.smallCircle .imageWrapper img {
+    border-radius: 90px;
+}
 .smallCircle a {
     color: #ffffff;
     font-family: SkinBonesRegular,Arial,sans-serif;
@@ -433,6 +435,12 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     width: 400px;
     height: 400px;
     overflow: hidden;
+}
+
+#slideshow .slideWrapper img {
+    border-radius: 400px !important;
+    width: 400px;
+    height: 400px;
 }
 
 .imageCaption {
