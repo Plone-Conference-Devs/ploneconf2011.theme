@@ -88,7 +88,7 @@ h4 {
 }
 
 #plone-logo {
-    position: fixed; left: 10px; top: 0px; 
+    position: fixed; right: 10px; top: 0px; 
     box-shadow: 0px 0px 0px rgb(0,0,0); /* for IE? */
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
@@ -181,7 +181,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     position: absolute;
     width: 50px;
     height: 175px;
-    margin: 69px 0 0 95.5%;
+    margin: 139px 0 0 95.5%;
 }
 .section-front-page #social-links {display: none;}
 
@@ -275,9 +275,9 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 }
 
 #sitemap-wrap{
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background-color: #222;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #111;
     padding: 20px;
     padding-bottom: 0px;
     display: inline-block;
@@ -317,8 +317,8 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 #content {
     background: rgba(0,0,0, 0.7);
     padding: 15px 20px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
 
@@ -596,6 +596,60 @@ ul.spkr li a:hover {
 #colophon li{
     padding-right:15px;
 }
+
+
+#portal-column-one dl.portletNavigationTree dt,
+#portal-column-one dl.portletNavigationTree dt a {
+        display:none;
+    }
+
+
+#portal-column-one dl.portletNavigationTree{
+    margin-left: 145px;
+    margin-top: 80px;
+    padding-top: 15px;
+    background: rgba(0,0,0, 0.7);
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width : 180px;
+    height: 300px;
+    font-size: 1.5em;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#portal-column-one dl.portletNavigationTree li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+
+#portal-column-one dl.portletNavigationTree li a{
+    color: #EE6A23;
+}
+
+#portal-column-one dl.portletNavigationTree li a:after{
+    content: ">>";
+}
+
+#portal-column-one dl.portletNavigationTree li a:hover{
+    color: #fff;
+}
+
+#portal-column-one dl.portletNavigationTree .navTreeCurrentItem{
+    background-color: transparent;
+}
+
+#portal-column-one dl.portletNavigationTree .navTreeCurrentNode a{
+    color: #fff;
+}
+
+#info-portlet{
+    margin-top: -110px;
+}
+
 
 /* -------------------------------------- */
 
