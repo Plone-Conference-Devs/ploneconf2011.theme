@@ -121,9 +121,10 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 }
 
 #portal-globalnav {
-    margin: 0 123px 0 0;
+    margin: 10px 85px 0 0;
     background: transparent none;
     font-size: 25px;
+    float: right;
 }
 
 #portal-globalnav a,
@@ -137,7 +138,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     text-transform: uppercase;
     width: 90px;
     text-align: center;
-    padding: 10px 10px 0;
+    padding: 10px 25px 0;
 }
 
 #portal-globalnav li.hover a {
@@ -145,13 +146,6 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-}
-
-/* I'm not sure how to get the top nav items with no dropdown to have a bottom border */
-x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;} 
-
-#portal-globalnav {
-    float: right;
 }
 
 #portal-globalnav ul,
@@ -162,7 +156,7 @@ x #portal-globalnav li.hover a + ul.submenu {border-bottom: 0px;}
     border-style: solid;
     border-width: 0 1px 1px 1px;
     text-align: center;
-    width: 110px;
+    width: 140px;
     padding-bottom: 5px;
     margin: 0;
     border-top:15px solid #fff;
