@@ -31,7 +31,7 @@ body.section-location-info {
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
-    background: transparent url('bg-content.png') repeat-y 11px top;
+    /*background: transparent url('bg-content.png') repeat-y 11px top;*/
     min-height: 500px;
 }
 body.section-front-page #visual-portal-wrapper,
@@ -258,43 +258,59 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 /* footer */
 #footer {
     clear: both;
-    background-color: #000000;
     box-shadow: 0 -20px 40px #000000;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+    margin-top: 10px;
+    text-align: center;
 }
+
+
 #portal-footer {
-    width: 965px;
-    margin: 3em auto 0;
-    padding: 3em 0 0;
-    background-color: #000000;
+    background-color:inherit;
 }
+
 #footer-sitemap {
-    font-size: 24px;
-    width: 325px;
-    margin: 0 0;
-    line-height: 1em;
-    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    line-height: 1em; 
+    text-align: left;
 }
+
+#sitemap-wrap{
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #222;
+    padding: 20px;
+    padding-bottom: 0px;
+    display: inline-block;
+}
+
 #footer-sitemap a,
 #footer-sitemap a:visited {
-    color: #ffffff;
+    color: #aeaeae;
 }
 #footer-sitemap a:hover {
     color: &dtml-linkHoverColor;;
+
 }
+#footer ul.navTreeLevel0 li.navTreeItem div{
+    padding-bottom: 5px;
+}
+
+#footer ul.navTreeLevel0 li.navTreeItem .navTreeLevel2 div{
+    padding-bottom: 1px;
+}
+
 #footer-sitemap.navTreeLevel0 > li {
+    font-size: 1.1em;
     float: left;
-    margin-bottom: 30px;
     margin-right: 10px;
-    min-height: 150px;
-    min-width: 150px;
+    width: 120px;
 }
 
 #footer-sitemap .navTreeLevel2 a {
-    font-size: 14px;
-    line-height: 1.5em;
-    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-    color: #aeaeae;
+    font-size: .8em;
+    color: #666;
 }
+
 #footer-sitemap .navTreeLevel2 a:hover {color: &dtml-linkHoverColor;;}
 
 /* subpage */
@@ -547,6 +563,11 @@ ul.spkr li a:hover {
     margin-top: 5px;
     padding-left: 10px;
     border-left: 20px solid #eee;
+    margin-bottom: 5px;
+}
+
+#content .formHelp{
+    color: #ccc;
 }
 
 <dtml-comment> adding some color for @@manage-viewlets</dtml-comment>
@@ -555,6 +576,24 @@ ul.spkr li a:hover {
     background-color: #222;
 }
 
+#colophon{
+    margin-top: 10px;
+    text-align:center;
+    color: #333;
+}
+
+#colophon a{
+    color: #333;
+    font-size: .9em;
+}
+
+#colophon a:hover{
+    color: #666;
+}
+
+#colophon li{
+    padding-right:15px;
+}
 
 /* -------------------------------------- */
 

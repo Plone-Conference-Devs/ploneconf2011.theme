@@ -16,8 +16,7 @@
             </a>
         </li>
         <li class="rss">
-            <a href="#" title="RSS">
-                <!--<span>&laquo; Teh Feedz</span>-->
+            <a tal:attributes="href string:${context/@@plone_portal_state/portal_url}/search_rss?portal_type=News+Item&review_state=published" title="RSS">
             </a>
         </li>
 </div>

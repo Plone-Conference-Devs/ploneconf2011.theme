@@ -1,13 +1,46 @@
 <div id="portal-footer">
 
     <div id="los-sponseros"></div>
-
-    <ul id="footer-sitemap"
-        class="navTreeLevel0 visualNoMarker"
-        tal:define="view nocall:context/@@sitemap_view;">
-        <tal:sitemap replace="structure view/createSiteMap" />
-    </ul>
-
-    <div class="visualClear"><!-- --></div>
-
+    
+    <div id="sitemap-wrap">
+        <ul id="footer-sitemap"
+            class="navTreeLevel0 visualNoMarker"
+            tal:define="view nocall:context/@@sitemap_view;">
+            <tal:sitemap replace="structure view/createSiteMap" />
+        </ul>
+        <div class="visualClear"><!-- --></div>
+            <div id="colophon"> 
+            <ul>
+                <li><span>
+                    <a tal:attributes="href 
+                    string:${context/@@plone_portal_state/portal_url}/about" 
+                    title="Why we do what we do">About</a>
+                    </span>
+                </li>
+                <li><span>
+                    <a tal:attributes="href 
+                    string:${context/@@plone_portal_state/portal_url}/privacy" 
+                    title="Privacy Policy">Privacy</a>
+                    </span>
+                </li>
+                <li><span>
+                    <a tal:attributes="href 
+                    string:${context/@@plone_portal_state/portal_url}/privacy" 
+                    title="Terms and Conditions">Terms &amp; Conditions</a>
+                    </span>
+                </li>
+                <li><span>
+                    <a tal:attributes="href 
+                    string:${context/@@plone_portal_state/portal_url}/privacy" 
+                    title="Return Policy">Returns</a>
+                    </span>
+                </li>
+                <li><span>
+                    <a tal:attributes="href 
+                    string:${context/@@plone_portal_state/portal_url}/contact-info" 
+                    title="Contact Us">Contact Us</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
