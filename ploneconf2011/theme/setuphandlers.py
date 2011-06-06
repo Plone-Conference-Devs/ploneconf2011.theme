@@ -8,4 +8,8 @@ def setupVarious(context):
     if context.readDataFile('ploneconf2011.theme_default.txt') is None:
         return
 
-    # Add additional setup code here
+    # set the default front page property of layout to be a new view
+    site = context.getSite()
+    front = site.get('front-page')
+    if front:
+        front.layout = 'home_page_view'
