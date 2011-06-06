@@ -97,7 +97,7 @@ h4 {
 
 
 /* for some areas that are hard to see text on */
-.listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd {background: #333;}
+.listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd, div.error {background: #333;}
 .ploneSkin table.mceLayout td.mceToolbar {background: #999;}
 a:hover, .reviewHistory, .contentHistory {color: #fff;}
 .documentByLine, .listing th {color: #ddd; font-weight: normal;}
@@ -177,7 +177,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 /* social links viewlet */
 #social-links {
-    /*background: transparent url('social_bg.png') no-repeat;*/ 
+    background: transparent url('social_bg.png') no-repeat;
     position: absolute;
     width: 90px;
     height: 175px;
@@ -550,6 +550,7 @@ ul.spkr li a:hover {
 
 #parent-fieldname-text blockquote.pullquote{
     color: #ddd;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 #edit-bar{
@@ -564,6 +565,7 @@ ul.spkr li a:hover {
     padding-left: 10px;
     border-left: 20px solid #eee;
     margin-bottom: 5px;
+    font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
 
 #content .formHelp{
