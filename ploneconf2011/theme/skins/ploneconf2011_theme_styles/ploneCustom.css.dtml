@@ -465,10 +465,11 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 #home-text {
     float: right;
     width: 400px;
-    margin-top: 255px;
+    margin-top: 126px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
     margin-bottom: 4em;
 }
+#home-text img.dates {margin-left: -16px; margin-bottom: -22px;}
 
 /* homepage slideshow */
 #slideshow {
