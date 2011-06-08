@@ -5,5 +5,7 @@
       <dependency>profile-plonetheme.basic:default</dependency>
       <dependency>profile-webcouturier.dropdownmenu:default</dependency>
       <dependency>profile-collective.easyslideshow:default</dependency>
+      <dependency>profile-Products.ContentWellPortlets:default</dependency>
+      <dependency>profile-collective.twitterportlet:default</dependency>
     </dependencies>
 </metadata>
