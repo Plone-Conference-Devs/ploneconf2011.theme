@@ -38,7 +38,7 @@ body.section-location-info {
 
 body.section-front-page #visual-portal-wrapper,
 body.section-front-page #content {background: transparent; padding: 0px;padding-right: 75px;}
-body.section-front-page #content {margin-top: 150px;}
+body.section-front-page #content {margin-top: 130px;}
 body.section-front-page #portal-column-content {width: 100%;}
 body.section-front-page #info-portlet {display: none;}
 
@@ -236,7 +236,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 }
 
 /* ----- portlets ----- */
-.portlet dt, .portletAssignments .portletHeader {background: transparent; font-family: SkinBonesRegular, Arial, sans-serif; color: #ee6a23; padding: 0px; font-size: 48px; letter-spacing: .5px; font-weight: normal;}
+#portlets-below h3, .portlet dt, .portletAssignments .portletHeader {background: transparent; font-family: SkinBonesRegular, Arial, sans-serif; color: #ee6a23; padding: 0px; font-size: 48px; letter-spacing: .5px; font-weight: normal;}
 .portlet .portletItem, .portletError dd {padding: 0px;}
 .portlet dt a, .portlet dt a:visited, .portlet dt a:hover {color: #ee6a23; font-weight: normal;}
 .portletItemDetails {margin: 0 0 1em; padding: 0px;}
@@ -464,41 +464,61 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 #home-text {
     float: right;
-    width: 400px;
-    margin-top: 126px;
+    width: 450px;
+    margin-top: 160px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
     margin-bottom: 4em;
 }
+
 #home-text img.dates {margin-left: -16px; margin-bottom: -22px;}
+
+#front-page-blurb{
+    margin-top: 25px;
+}
+
+#front-page-blurb p{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+#front-page-blurb a{
+    font-size: 1.2em;
+}
+
+#front-page-blurb a#register-link{
+    font-size: 1.4em;
+    font-weight: bold;
+}
 
 /* homepage slideshow */
 #slideshow {
-    width: 460px;
-    height: 460px;
+    width: 360px;
+    height: 360px;
     border: none;
     background-color: #3c4d47;
-    border-radius: 400px;
+    border-radius: 300px;
     position: relative;
     left: -50px;
+    margin-left: 60px;
 }
 
 #slideshow .slideWrapper {
     border: 30px solid #3c4d47;
-    border-radius: 400px;
-    width: 400px;
-    height: 400px;
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
 }
 
 #slideshow .slideWrapper img {
-    border-radius: 400px !important;
-    width: 400px;
-    height: 400px;
+    border-radius: 300px !important;
+    width: 300px;
+    height: 300px;
 }
 
 .imageCaption {
     width: 350px;
-    margin: 300px 0 0 45px;
+    margin: 70px 0 0 45px;
     background: transparent none;
 }
 
@@ -515,6 +535,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     font-size: 30px;
     line-height: 25px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
+    color: #000;
 }
 
 .slideimage3 .imageCaption {margin-top: 100px;}
