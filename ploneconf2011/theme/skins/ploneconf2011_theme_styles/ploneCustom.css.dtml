@@ -37,7 +37,11 @@ body.section-location-info {
 }
 
 body.section-front-page #visual-portal-wrapper,
-body.section-front-page #content {background: transparent; padding: 0px;}
+body.section-front-page #content {
+    background: transparent; 
+    padding: 0px;
+    margin-top: -15px;
+}
 /*body.section-front-page #content {margin-top: 130px;}*/
 body.section-front-page #portal-column-content {width: 100%;}
 body.section-front-page #info-portlet {display: none;}
@@ -456,7 +460,7 @@ a:hover{
 }
 
 .template-home_page_view h2 {
-    font-size: 67px;
+    font-size: 55px;
 }
 
 .template-home_page_view #content {background: transparent none;}
@@ -477,14 +481,15 @@ a:hover{
 
 #home-text {
     float: right;
-    width: 500px;
+    width: 400px;
     margin-top: 30px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     background: rgba(0,0,0, 0.7);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 90px;
+    margin-top: 130px;
 }
 
 #home-text img.dates {margin-left: -16px; margin-bottom: -22px;}
@@ -499,42 +504,43 @@ a:hover{
 
 /* homepage slideshow */
 #slideshow {
-    width: 360px;
-    height: 360px;
+    width: 400px;
+    height: 400px;
     border: none;
-    background-color: #3c4d47;
-    border-radius: 300px;
+    background-color: #250055;
+    border-radius: 400px;
     position: relative;
     left: -50px;
-    margin-left: 60px;
+    margin-left: 20px;
     overflow: visible;
 }
 
 #slideshow .slideWrapper {
-    border: 30px solid #3c4d47;
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
+    border: 25px solid #250055;
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
 }
 
 #slideshow .slideWrapper img {
-    border-radius: 300px !important;
-    width: 300px;
-    height: 300px;
+    border-radius: 400px !important;
+    width: 400px;
+    height: 400px;
 }
 
-/*#get-excited{
-    border: 18px solid #932432;
-    border-radius: 150px;
-    width: 150px;
-    height: 150px;
+#get-excited{
+    border: 15px solid #ee6a23;
+    border-radius: 190px;
+    width: 190px;
+    height: 190px;
     overflow: hidden;
     position: absolute;
-    top: 40px;
+    top: 0px;
     right: 0px;
     background-image: url(tickies.png);
     background-position: 45% 0%;
+    overflow: visible;
 }
 
 #get-excited .imageTitle{
@@ -543,18 +549,14 @@ a:hover{
     letter-spacing: 1px;
     font-weight: normal;
     text-shadow: 0 0 10px #000;
-    margin-top: 10px;
+    margin-top: 150px;
     text-align: right;
 }
 
 #get-excited .imageTitle a, #get-excited .imageTitle a:hover{
     color: #fff;
 }
-*/
 
-#get-excited{
-    display:none;
-}
 
 .imageCaption {
     width: 350px;
