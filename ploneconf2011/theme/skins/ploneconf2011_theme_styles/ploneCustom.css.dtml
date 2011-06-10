@@ -511,6 +511,33 @@ a:hover{
     height: 300px;
 }
 
+#get-excited{
+    border: 18px solid #932432;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-image: url(tickies.png);
+    background-position: 45% 0%;
+}
+
+#get-excited .imageTitle{
+    font-family: SkinBonesRegular, DIN, Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-shadow: 0 0 10px #000;
+    margin-top: 10px;
+    text-align: right;
+}
+
+#get-excited .imageTitle a, #get-excited .imageTitle a:hover{
+    color: #fff;
+}
+
 .imageCaption {
     width: 350px;
     margin: 70px 0 0 45px;
