@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <portlets>
- <portletmanager name="ContentWellPortlets.FooterPortletManager6"
-    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="plone.dashboard4"
     type="plone.app.portlets.interfaces.IDashboard"/>
  <portletmanager name="plone.rightcolumn"
     type="plone.app.portlets.interfaces.IRightColumn"/>
- <portletmanager name="ContentWellPortlets.BelowPortletManager6"
-    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="plone.leftcolumn"
     type="plone.app.portlets.interfaces.ILeftColumn"/>
- <portletmanager name="ContentWellPortlets.AbovePortletManager3"
-    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
- <portletmanager name="plone.dashboard3"
-    type="plone.app.portlets.interfaces.IDashboard"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager2"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="ContentWellPortlets.FooterPortletManager3"
     type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="plone.dashboard1"
@@ -22,37 +22,32 @@
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
  <portletmanager name="ContentWellPortlets.BelowPortletManager4"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
- <portletmanager name="ContentWellPortlets.FooterPortletManager1"
-    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
- <portletmanager name="ContentWellPortlets.FooterPortletManager4"
-    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
  <portletmanager name="ContentWellPortlets.AbovePortletManager6"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="plone.dashboard2"
+    type="plone.app.portlets.interfaces.IDashboard"/>
  <portletmanager name="ContentWellPortlets.BelowPortletManager1"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
  <portletmanager name="ContentWellPortlets.AbovePortletManager2"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
- <portletmanager name="ContentWellPortlets.BelowPortletManager5"
-    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="ContentWellPortlets.AbovePortletManager5"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager1"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
  <portletmanager name="ContentWellPortlets.BelowPortletManager2"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
- <portletmanager name="ContentWellPortlets.AbovePortletManager4"
+ <portletmanager name="ContentWellPortlets.AbovePortletManager3"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
- <portletmanager name="ContentWellPortlets.FooterPortletManager2"
-    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
- <portletmanager name="ContentWellPortlets.FooterPortletManager5"
-    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
- <portletmanager name="plone.dashboard2"
+ <portletmanager name="ContentWellPortlets.BelowPortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="plone.dashboard3"
     type="plone.app.portlets.interfaces.IDashboard"/>
  <portletmanager name="ContentWellPortlets.BelowPortletManager3"
     type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
- <portlet title="News" addview="portlets.News"
-    description="A portlet which can render a listing of recent news">
-  <for interface="plone.app.portlets.interfaces.IColumn"/>
-  <for interface="plone.app.portlets.interfaces.IDashboard"/>
- </portlet>
  <portlet title="Login" addview="portlets.Login"
     description="A portlet which can render a log-in box">
   <for interface="plone.app.portlets.interfaces.IColumn"/>
@@ -77,6 +72,12 @@
   <for interface="plone.app.portlets.interfaces.IColumn"/>
   <for interface="plone.app.portlets.interfaces.IDashboard"/>
  </portlet>
+ <portlet title="Slideshow"
+    addview="collective.easyslideshow.portlets.Slideshow"
+    description="Displays a Slideshow">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
  <portlet title="Calendar portlet" addview="portlets.Calendar"
     description="A portlet which can render a calendar.">
   <for interface="plone.app.portlets.interfaces.IColumn"/>
@@ -92,9 +93,8 @@
   <for interface="plone.app.portlets.interfaces.IColumn"/>
   <for interface="plone.app.portlets.interfaces.IDashboard"/>
  </portlet>
- <portlet title="Slideshow"
-    addview="collective.easyslideshow.portlets.Slideshow"
-    description="Displays a Slideshow">
+ <portlet title="News" addview="portlets.News"
+    description="A portlet which can render a listing of recent news">
   <for interface="plone.app.portlets.interfaces.IColumn"/>
   <for interface="plone.app.portlets.interfaces.IDashboard"/>
  </portlet>
@@ -354,6 +354,46 @@
     manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
  <blacklist category="context" location="/"
     manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
+ 
+ <!-- XXX: GS doesn't export these so don't override them in 
+    an acciental comment please! -->
+ <blacklist category="context" location="/event"
+    manager="ContentWellPortlets.BelowPortletManager1" status="block"/>
+ <blacklist category="context" location="/event"
+    manager="ContentWellPortlets.BelowPortletManager2" status="block"/>
+ <blacklist category="context" location="/event"
+    manager="ContentWellPortlets.BelowPortletManager3" status="block"/>
+
+ <blacklist category="context" location="/about"
+    manager="ContentWellPortlets.BelowPortletManager1" status="block"/>
+ <blacklist category="context" location="/about"
+    manager="ContentWellPortlets.BelowPortletManager2" status="block"/>
+ <blacklist category="context" location="/about"
+    manager="ContentWellPortlets.BelowPortletManager3" status="block"/>
+    
+ <blacklist category="context" location="/party"
+    manager="ContentWellPortlets.BelowPortletManager1" status="block"/>
+ <blacklist category="context" location="/party"
+    manager="ContentWellPortlets.BelowPortletManager2" status="block"/>
+ <blacklist category="context" location="/party"
+    manager="ContentWellPortlets.BelowPortletManager3" status="block"/>
+    
+ <blacklist category="context" location="/register"
+    manager="ContentWellPortlets.BelowPortletManager1" status="block"/>
+ <blacklist category="context" location="/register"
+    manager="ContentWellPortlets.BelowPortletManager2" status="block"/>
+ <blacklist category="context" location="/register"
+    manager="ContentWellPortlets.BelowPortletManager3" status="block"/>
+
+  <blacklist category="context" location="/location-info"
+    manager="ContentWellPortlets.BelowPortletManager1" status="block"/>
+ <blacklist category="context" location="/location-info"
+    manager="ContentWellPortlets.BelowPortletManager2" status="block"/>
+ <blacklist category="context" location="/location-info"
+    manager="ContentWellPortlets.BelowPortletManager3" status="block"/>
+    
+ <!-- XXX -->
+ 
  <blacklist category="user" location="/" manager="plone.rightcolumn"
     status="acquire"/>
  <blacklist category="group" location="/" manager="plone.rightcolumn"
