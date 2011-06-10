@@ -472,22 +472,8 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
 
 #home-text img.dates {margin-left: -16px; margin-bottom: -22px;}
 
-#front-page-blurb{
-    margin-top: 25px;
-}
-
-#front-page-blurb p{
-    font-size: 1.5em;
-    padding-bottom: 10px;
-}
-
-#front-page-blurb a{
-    font-size: 1.2em;
-}
-
-#front-page-blurb a#register-link{
-    font-size: 1.4em;
-    font-weight: bold;
+#home-text #parent-fieldname-text{
+    margin-top: 30px;
 }
 
 /* homepage slideshow */
@@ -528,6 +514,7 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     letter-spacing: 1px;
     margin-bottom: 0.25em;
     font-weight: normal;
+    text-shadow: 0 0 10px #000;
 }
 
 .imageCaption .imageDescrip {
@@ -535,11 +522,16 @@ a:hover, .reviewHistory, .contentHistory {color: #fff;}
     font-size: 30px;
     line-height: 25px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
-    color: #000;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
 }
 
+/*
+commenting out since we can't programmatically determine this 
 .slideimage3 .imageCaption {margin-top: 100px;}
 .slideimage3 .imageCaption .imageDescrip {color: #000;}
+*/
+
 
 /* authoring */
 #content .configlets li {
@@ -698,6 +690,12 @@ ul.spkr li a:hover {
     left: 60px; 
 }
 
+/* this is specifically for the front page but I doubt 
+it should be anywhere in THIS site anyways so laziness 
+wins */
+#link-presentation{
+    display:none;
+}
 
 /* -------------------------------------- */
 

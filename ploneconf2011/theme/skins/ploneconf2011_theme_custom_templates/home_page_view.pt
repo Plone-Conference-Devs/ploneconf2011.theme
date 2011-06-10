@@ -22,14 +22,6 @@
                 Body text
             </metal:field>
             
-            <div id="front-page-blurb">
-                <h1>San Francisco, California</h1>
-                <p>It's time to start planning your pilgrimage to the annual Plone Conference in San Francisco.  We're building an action-packed lineup of <a tal:attributes="href string:${context/@@plone_portal_state/portal_url}/event/training" title="Training">training</a>, <a tal:attributes="href string:${context/@@plone_portal_state/portal_url}/event/talks" title="talks">talks</a>, and <a tal:attributes="href string:${context/@@plone_portal_state/portal_url}/event/sprints" title="Sprints">sprints</a> for you and 400 of your closest friends. Reunite with old friends and finally put a face to that IRC handle this November by
-                <a id="register-link" href="http://www.brownpapertickets.com/event/176269" 
-                    title="Register">registering now!</a>
-                </p>
-                
-            </div>
         </div>
         
         <metal:block use-macro="here/slideshow_macros/macros/slideshow">
