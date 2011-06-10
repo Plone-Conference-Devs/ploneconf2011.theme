@@ -504,11 +504,11 @@ a:hover{
 
 /* homepage slideshow */
 #slideshow {
-    width: 400px;
-    height: 400px;
+    width: 425px;
+    height: 425px;
     border: none;
     background-color: #250055;
-    border-radius: 400px;
+    border-radius: 425px;
     position: relative;
     left: -50px;
     margin-left: 20px;
