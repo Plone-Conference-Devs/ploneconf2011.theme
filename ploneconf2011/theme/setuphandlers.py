@@ -4,11 +4,6 @@ import transaction
 
 def setupVarious(context):
 
-    # Ordinarily, GenericSetup handlers check for the existence of XML files.
-    # Here, we are not parsing an XML file, but we use this text file as a
-    # flag to check that we actually meant for this import step to be run.
-    # The file is found in profiles/default.
-
     if context.readDataFile('ploneconf2011.theme_default.txt') is None:
         return
 
@@ -42,19 +37,14 @@ It's time to start planning your pilgrimage to the annual Plone Conference in Sa
                 
                 imageId = location.split(".")[0]
                 
-                imageData = context.readDataFile(location, 'images')
-                if imageData:   
+                imageFile = context.openDataFile(location, 'images')
+                if imageFile:   
                     transaction.begin() # in case this list gets huge
-                    # open up the resources and get the binary shizzle into some
-                    # stringIO field for passing onto THE machinery
-                    imageFile = StringIO.StringIO()
-                    imageFile.write(imageData)
                     
                     slide.invokeFactory(id=imageId, type_name='Image')
                     newImage = slide.get(imageId)
-                    newImage.setImage(imageFile)
+                    newImage.setImage(imageFile.read())
                     imageFile.close()
-                    
                     
                     newImage.setTitle(title)
                     newImage.setDescription(description)
