@@ -29,7 +29,7 @@ It's time to start planning your pilgrimage to the annual Plone Conference in Sa
             # XXX: this would be fun if it was reading a metadata file instead :)
             #       dreams for another day I guess...
             addMe = [
-                        ("ss-sprint.jpg", "Contribute Back", "Sprint | November 7-8"), 
+                        ("ss-sprint.jpg", "Contribute", "Sprint | November 7-8"), 
                         ("ss-conf.jpg", "Catch Up", "Conference | November 3-6"), 
                         ("ss-training.jpg", "Get Learned", "Training | November 1-2"), 
                     ]
