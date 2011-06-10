@@ -50,6 +50,7 @@ body.section-front-page #info-portlet {display: none;}
 div.position_0 {margin-left: -100%;}
 div.prefix_3 {margin-left: -68%;}
 
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1em;
     color: #b31010;
@@ -101,7 +102,15 @@ h4 {
 /* for some areas that are hard to see text on */
 .listing td.draggable, .listing .odd td.draggable, .portalMessage, .warning dd, div.error {background: #333;}
 .ploneSkin table.mceLayout td.mceToolbar {background: #999;}
-a:hover, .reviewHistory, .contentHistory {color: #fff;}
+
+a:hover{
+    color: #EE6A23;
+}
+
+.reviewHistory, .contentHistory {
+    color: #fff;
+}
+
 .documentByLine, .listing th {color: #ddd; font-weight: normal;}
 
 
