@@ -503,11 +503,11 @@ a:hover{
 
 /* homepage slideshow */
 #slideshow {
-    width: 425px;
-    height: 425px;
+    width: 400px;
+    height: 400px;
     border: none;
     background-color: #250055;
-    border-radius: 425px;
+    border-radius: 400px;
     position: relative;
     left: -50px;
     margin-left: 20px;
@@ -517,15 +517,15 @@ a:hover{
 #slideshow .slideWrapper {
     border: 25px solid #250055;
     border-radius: 400px;
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
     overflow: hidden;
 }
 
 #slideshow .slideWrapper img {
-    border-radius: 400px !important;
-    width: 400px;
-    height: 400px;
+    border-radius: 375px !important;
+    width: 375px;
+    height: 375px;
 }
 
 #get-excited{
