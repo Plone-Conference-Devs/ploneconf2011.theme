@@ -15,7 +15,9 @@
 
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
-        
+        <div id="dates-banner">
+            <img src="dates-front.png" alt="Training Nov 1-2, Conf Nov 3-6, Sprint Nov 7-8" class="dates" />
+        </div>
         <div id="get-excited">
             <div class="imageTitle">
             <a href="http://www.brownpapertickets.com/event/176269" 
@@ -24,7 +26,6 @@
         </div>
         
         <div id="home-text">
-          <img src="dates-front.png" alt="Training Nov 1-2, Conf Nov 3-6, Sprint Nov 7-8" class="dates" />
             <metal:field use-macro="python:context.widget('text', mode='view')">
                 Body text
             </metal:field>
