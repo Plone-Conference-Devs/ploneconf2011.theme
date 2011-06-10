@@ -586,8 +586,8 @@ ul.spkr li a:hover {
 }
 
 #edit-bar{
-    /* this is so the cranes don't eat the edit bar */
-    width: 75%;
+    /* this is so the cranes don't eat the edit bar 
+    width: 75%;*/
 }
 
 .documentDescription{
