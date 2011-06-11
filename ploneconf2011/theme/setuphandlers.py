@@ -1,7 +1,6 @@
 import StringIO
 import transaction
 
-
 def setupVarious(context):
 
     if context.readDataFile('ploneconf2011.theme_default.txt') is None:
@@ -16,8 +15,8 @@ def setupVarious(context):
         # set the default content so that we can see what this will look like
         # but don't override if its already been set
         if front.getText().count("Make it your own"):
-            front.setText("""San Francisco, California TITLE HERE
-It's time to start planning your pilgrimage to the annual Plone Conference in San Francisco. We're building an action-packed lineup of training, talks, and sprints for you and 400 of your closest friends. Reunite with old friends and finally put a face to that IRC handle this November by registering now!""")
+            front.setText("""<h2>Ah, San Francisco</h2>
+It's time to start planning your pilgrimage to the annual Plone Conference in San Francisco. We're building an action-packed lineup of training, talks, and sprints for you and 400 of your closest friends. Reunite with old friends and finally put a face to that IRC handle this November. Registration opens soon!""")
             front.setDescription("")
 
     # set the initial images
@@ -28,6 +27,7 @@ It's time to start planning your pilgrimage to the annual Plone Conference in Sa
         if not slide.getChildNodes():
             # XXX: this would be fun if it was reading a metadata file instead :)
             #       dreams for another day I guess...
+            # I like your dreams ~S
             addMe = [
                         ("ss-sprint.jpg", "Contribute Back", "Sprint | November 7-8"), 
                         ("ss-conf.jpg", "Catch Up", "Conference | November 3-6"), 

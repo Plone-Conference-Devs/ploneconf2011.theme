@@ -36,7 +36,7 @@
                                description image/Description;
                                url image/getURL;
                                link_path image/getRelatedLink">
-                <div class="imageCaption" tal:condition="python:props['display_caption']">
+                <div class="" tal:attributes="class string:imageCaption slideimage${repeat/image/number}" tal:condition="python:props['display_caption']">
                     <span class="imageTitle" tal:content="title" />
                     <span class="imageDescrip" tal:content="description" />
                 </div>

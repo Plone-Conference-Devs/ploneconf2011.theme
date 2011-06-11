@@ -31,7 +31,10 @@ body.section-location-info {
 #visual-portal-wrapper {
     width: 965px;
     margin: 0 auto;
+	/* I cannot wrap my head around this...
+	 * maybe get me crazy drunk and I'll understand?
     background: transparent url('bg-content.png') repeat-y 11px top;
+    */
     min-height: 650px;
     padding-right: 75px;
 }
@@ -40,7 +43,7 @@ body.section-front-page #visual-portal-wrapper,
 body.section-front-page #content {
     background: transparent; 
     padding: 0px;
-    margin-top: -15px;
+    margin-top: 0;
 }
 /*body.section-front-page #content {margin-top: 130px;}*/
 body.section-front-page #portal-column-content {width: 100%;}
@@ -83,7 +86,7 @@ h4 {
 
 /* portal-top */
 #portal-top {
-    height: 141px;
+    height: 108px;
 }
 
 .section-front-page #portal-top {
@@ -95,7 +98,7 @@ h4 {
 }
 
 #plone-logo {
-    position: absolute; right: -718px; top: 0px; 
+    position: absolute; right: -693px; top: 0px; 
     box-shadow: 0px 0px 0px rgb(0,0,0); /* for IE? */
     -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
     -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
@@ -153,7 +156,7 @@ a:hover{
     text-transform: uppercase;
     width: 90px;
     text-align: center;
-    padding: 10px 25px 0;
+    padding: 10px 25px 6px;
 }
 
 #portal-globalnav li.hover a {
@@ -174,7 +177,10 @@ a:hover{
     width: 140px;
     padding-bottom: 5px;
     margin: 0;
-    border-top:15px solid #fff;
+    border-top:1px solid #fff;
+	/* I can be talked out of this, just seeing what you think */
+	border-radius: 0 0 12px 12px;
+	-moz-border-radius: 0 0 12px 12px;
 }
 
 #portal-globalnav ul.submenu a,
@@ -262,8 +268,11 @@ a:hover{
 
 /* three col area on front page */
 .section-front-page div.prefix_3 {margin-left: -100%;}
-.section-front-page #portlets-below {width: 960px;}
-.section-front-page .portlet {width: 285px; margin: 0 50px 0 0; float: left;}
+.section-front-page #portlets-below {
+	width: 960px;
+	margin-top: -25px;
+}
+.section-front-page .portlet {width: 288px; margin: 0 42px 0 0; float: left;}
 .section-front-page .portlet.portletTwitterPortlet {margin-right: 0px;}
 
 .portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px; margin-top: -2px; padding-top: 2px;}
@@ -294,16 +303,20 @@ a:hover{
     KLUDGE: this is not exact but this will change anyways once we have 
     sponsorships so I'm not too worried about it at the moment
     */
-     margin-left: 30%;
-    
+     margin-left: 25%;    
 }
 
 #sitemap-wrap{
     -moz-border-radius: 15px;
     border-radius: 15px;
     background-color: #111;
-    padding: 20px;
-    padding-bottom: 0px;
+    padding: 21px;
+    padding-bottom: 0;
+	width: 930px;
+	margin: 2em auto;
+    -moz-box-shadow: inset 1px 1px 3px #000;
+    -webkit-box-shadow: inset 1px 1px 3px #000;
+    box-shadow: inner 1px 1px 3px #000;  
     
     /* uncomment to have the footer not span the whole page
        display: inline-block;
@@ -409,7 +422,16 @@ a:hover{
     height: 180px;
     padding: 35px 5px 0 33px;
     width: 180px;
+	margin-left: 12px;
+}
 
+
+/* meh */
+largeCircle span {
+    margin-left: -14px;
+    margin-top: 5px;
+    position: absolute;
+    width: 190px;
 }
 
 .largeCircle li {
@@ -481,16 +503,17 @@ a:hover{
 
 #home-text {
     float: right;
-    width: 400px;
+    width: 420px;
     font-family: 'MisoRegular', "Trebuchet MS", Tahoma, Arial, sans-serif;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    background: rgba(0,0,0, 0.7);
-    border-radius: 20px;
-    margin-right: 90px;
-    margin-top: 130px;
+    padding-bottom: 3px;
+    background: rgba(0,0,0, 0.75);
+    border-radius: 21px;
+    margin: 130px 45px 6px 0;
 }
 
+#home-text h2 {
+    color: red;
+}
 #home-text img.dates {margin-left: -16px; margin-bottom: -22px;}
 
 #home-text #parent-fieldname-text{
@@ -503,10 +526,9 @@ a:hover{
 
 /* homepage slideshow */
 #slideshow {
-    width: 400px;
-    height: 400px;
+    width: 427px;
+    height: 427px;
     border: none;
-    background-color: #250055;
     border-radius: 400px;
     position: relative;
     left: -50px;
@@ -515,17 +537,17 @@ a:hover{
 }
 
 #slideshow .slideWrapper {
-    border: 25px solid #250055;
+    border: 27px solid #250055;
     border-radius: 400px;
-    width: 375px;
-    height: 375px;
+    width: 373px;
+    height: 373px;
     overflow: hidden;
 }
 
 #slideshow .slideWrapper img {
-    border-radius: 375px !important;
-    width: 375px;
-    height: 375px;
+    border-radius: 373px !important;
+    width: 373px;
+    height: 373px;
 }
 
 #get-excited{
@@ -536,7 +558,7 @@ a:hover{
     overflow: hidden;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -21px;
     background-image: url(tickies.png);
     background-position: 45% 0%;
     overflow: visible;
@@ -581,11 +603,8 @@ a:hover{
     text-shadow: 0 0 10px #000;
 }
 
-/*
-commenting out since we can't programmatically determine this 
-.slideimage3 .imageCaption {margin-top: 100px;}
-.slideimage3 .imageCaption .imageDescrip {color: #000;}
-*/
+.slideimage2 .imageCaption {margin-top: 256px;}
+.slideimage3 .imageCaption {margin-top: 256px;}
 
 
 /* authoring */
