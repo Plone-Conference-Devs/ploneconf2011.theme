@@ -109,20 +109,7 @@
   <for interface="plone.app.portlets.interfaces.IColumn"/>
   <for interface="plone.app.portlets.interfaces.IDashboard"/>
  </portlet>
- <assignment name="sponsor" category="context" key="/"
-    manager="ContentWellPortlets.BelowPortletManager1"
-    type="plone.portlet.static.Static" visible="True">
-  <property name="text">&lt;h3&gt;Sponsorship&lt;/h3&gt;
-   &lt;div&gt;&lt;span id="internal-source-marker_0.02648157300427556"&gt;YOU can make a huge difference in the 2011 Plone Conference by &lt;a class="internal-link" href="event/sponsor"&gt;becoming a sponsor&lt;/a&gt;.  We hope this new approach to sponsorship will bring more value, recognition, and ROI to your company.  
-   &lt;meta /&gt;
-   Visit our &lt;a class="internal-link" href="event/sponsor"&gt;sponsorship page&lt;/a&gt; to learn how we’re re-thinking what it means to become a sponsor.&lt;/span&gt;&lt;/div&gt;
-   &lt;h3&gt;Tickets are Limited!&lt;/h3&gt;
-   &lt;div&gt;&lt;span&gt;Tickets to Plone Conference 2011 go on sale soon.  Visit our &lt;a class="internal-link" href="register"&gt;tickets page&lt;/a&gt; to see pricing information so you can register at the right pricing level. Tickets in the various pricing tiers are limited due to space limitations so plan ahead.&lt;/span&gt;&lt;/div&gt;</property>
-  <property name="more_url"/>
-  <property name="omit_border">False</property>
-  <property name="header">Sponsor</property>
-  <property name="footer"/>
- </assignment>
+
  <assignment name="twitter" category="context" key="/"
     manager="ContentWellPortlets.BelowPortletManager3"
     type="collective.twitterportlet.TwitterPortlet" visible="True">
