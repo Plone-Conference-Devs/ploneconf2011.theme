@@ -303,7 +303,7 @@ a:hover{
     KLUDGE: this is not exact but this will change anyways once we have 
     sponsorships so I'm not too worried about it at the moment
     */
-     margin-left: 25%;    
+     margin-left: 20%;    
 }
 
 #sitemap-wrap{
