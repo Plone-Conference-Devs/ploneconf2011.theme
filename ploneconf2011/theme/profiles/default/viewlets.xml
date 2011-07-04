@@ -7,6 +7,9 @@
    <viewlet name="plone.global_sections"/>
    <viewlet name="plone.logo"/>
   </order>
+  <order manager="plone.portalfooter" skinname="Plone Conference 2011 Theme">
+    <viewlet name="collective.sponsorship.sponsors" insert-before="plone.colophon" />
+  </order>
     
  <hidden manager="plone.portalfooter" skinname="Plone Conference 2011 Theme">
   <viewlet name="plone.colophon"/>

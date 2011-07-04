@@ -69,6 +69,7 @@ h1, h2 {
     font-size: 48px;
 }
 
+
 h2 {
     margin-top: 25px;
 }
@@ -312,15 +313,12 @@ a:hover{
     background-color: #111;
     padding: 21px;
     padding-bottom: 0;
-	width: 930px;
-	margin: 2em auto;
+	width: 380px;
+	margin: 2em;
     -moz-box-shadow: inset 1px 1px 3px #000;
     -webkit-box-shadow: inset 1px 1px 3px #000;
     box-shadow: inner 1px 1px 3px #000;  
-    
-    /* uncomment to have the footer not span the whole page
-       display: inline-block;
-    */
+    float: left;
 }
 
 #footer-sitemap a,
@@ -762,6 +760,59 @@ ul.spkr li a:hover {
     position: absolute;
     top: 255px;
     left: 60px; 
+}
+
+
+/* Sanity for manage interfaces */
+dl.viewlet, .viewletmanager > dt, .viewlet > dt{
+    color: #000;
+}
+
+body.portaltype-plone-site {
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+}
+
+body.portaltype-plone-site #portlets-below{
+    display: none;
+}
+
+body.portaltype-plone-site div.prefix_3{
+    margin-left: -88%;
+}
+
+body.portaltype-plone-site .grid_width_is_9 {
+    width: 84.0%;
+}
+
+
+/* sponsor stuff */
+#sponsorships{
+    padding-top: 10px;
+}
+
+#sponsorships h2{
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#sponsorships ul{
+    
+}
+
+#sponsorships ul li{
+    float: left;
+    padding: 5px;
+}
+
+div.sponsor-no-image{
+    font-size: 48px;
+    font-family: SkinBonesRegular, Arial, sans-serif;
+    line-height: 1em;
+    color: #b31010;
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 /* this is specifically for the front page but I doubt 
