@@ -8,7 +8,8 @@
    <viewlet name="plone.logo"/>
   </order>
   <order manager="plone.portalfooter" skinname="Plone Conference 2011 Theme">
-    <viewlet name="collective.sponsorship.sponsors" insert-before="plone.colophon" />
+    <viewlet name="collective.sponsorship.sponsors" insert-after="plone.footer" />
+    <viewlet name="plone.analytics" insert-after="collective.sponsorship.sponsors" />
   </order>
     
  <hidden manager="plone.portalfooter" skinname="Plone Conference 2011 Theme">
