@@ -8,5 +8,6 @@
       <dependency>profile-collective.easyslideshow:default</dependency>
       <dependency>profile-Products.ContentWellPortlets:default</dependency>
       <dependency>profile-collective.twitterportlet:default</dependency>
+      <dependency>profile-plone.portlet.viewlet:default</dependency>
     </dependencies>
 </metadata>

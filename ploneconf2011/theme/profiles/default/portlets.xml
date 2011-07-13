@@ -98,6 +98,9 @@
   <for interface="plone.app.portlets.interfaces.IColumn"/>
   <for interface="plone.app.portlets.interfaces.IDashboard"/>
  </portlet>
+  <portlet title="Viewlet portlet"
+    addview="plone.portlet.viewlet.ViewletPortlet"
+    description="A portlet that displays a viewlet."/>
  <portlet title="Static text portlet" addview="plone.portlet.static.Static"
     description="A portlet which can display static HTML text."/>
  <portlet title="Navigation" addview="portlets.Navigation"
@@ -111,19 +114,28 @@
  </portlet>
 
  <assignment name="twitter" category="context" key="/"
-    manager="ContentWellPortlets.BelowPortletManager3"
+    manager="ContentWellPortlets.BelowPortletManager1"
     type="collective.twitterportlet.TwitterPortlet" visible="True">
   <property name="username">ploneconf</property>
-  <property name="count">5</property>
+  <property name="count">4</property>
   <property name="include_retweets">False</property>
   <property name="link_to_profile_url">True</property>
   <property name="name">Say What?</property>
  </assignment>
+ <!--
+ This currently doesn't work! 
+ <assignment name="viewlet-plone-portalfooter-collective-sponsorship"
+    category="context" key="/"
+    manager="ContentWellPortlets.BelowPortletManager3"
+    type="plone.portlet.viewlet.ViewletPortlet" visible="True">
+  <property
+     name="manager_viewlet">plone.portalfooter collective.sponsorship.sponsors</property>
+ </assignment>-->
  <assignment name="navigation" category="context" key="/"
     manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
   <property name="topLevel">1</property>
   <property name="currentFolderOnly">True</property>
-  <property name="name">Nav sucks</property>
+  <property name="name">Where am I?</property>
   <property name="includeTop">False</property>
   <property name="bottomLevel">0</property>
   <property name="root"></property>

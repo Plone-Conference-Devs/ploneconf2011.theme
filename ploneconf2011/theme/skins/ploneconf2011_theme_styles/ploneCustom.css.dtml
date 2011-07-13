@@ -274,7 +274,7 @@ a:hover{
 	margin-top: -25px;
 }
 .section-front-page .portlet {width: 288px; margin: 0 42px 0 0; float: left;}
-.section-front-page .portlet.portletTwitterPortlet {margin-right: 0px;}
+
 
 .portletTwitterPortlet .portletHeader {background: url(bird.png) no-repeat 165px top transparent; padding-right: 54px; margin-top: -2px; padding-top: 2px;}
 .portletTwitterPortlet .portletItemDetails {font-size: 14px; text-align: right; color: #aeaeae;}
@@ -804,23 +804,29 @@ body.portaltype-plone-site .grid_width_is_9 {
 }
 
 
-/* sponsor stuff 
-#sponsorships{
+/* sponsor stuff */
+
+.sponsorships{
     padding-top: 10px;
 }
 
-#sponsorships h2{
+.sponsorships h2{
     font-size: 1.8em;
-    text-align: left;
 }
 
-#sponsorships ul{
-    
-}
 
-#sponsorships ul li{
-    float: left;
+.sponsorships ul li{
     padding: 5px;
+}
+
+/* 
+  sponsor viewlet portlet gets same formatting 
+  as other portlets
+*/
+.portletsBelowContentC .portletWrapper div{
+    width: 288px;
+    margin: 0;
+    float: left;
 }
 
 div.sponsor-no-image{
@@ -832,37 +838,36 @@ div.sponsor-no-image{
     font-weight: normal;
 }
 
-*/
-/* Wyn quick edit */
-
-
-
-#sponsorships{
-padding-top: 10px;
+ul.conference-sponsors img{
+    max-width: 300px;
 }
-#sponsorships h2{
-font-size: 1.8em;
 
-}
-#sponsorships ul{
 
+#portlets-below ul.conference-sponsors img{
+    max-width: 250px;
 }
-#sponsorships ul li{
 
-padding: 5px;
+#portlets-below .sponsorships{
+    padding-top: 0;
 }
-div.sponsor-no-image{
-font-size: 48px;
-font-family: SkinBonesRegular, Arial, sans-serif;
-line-height: 1em;
-color: #b31010;
-letter-spacing: 2px;
-font-weight: normal;
-padding-top:0.5em;
+
+#portlets-below .sponsorships h2{
+    font-size: 48px;
+    color: #EE6A23;
+    margin-top: 0;
 }
-/* this is specifically for the front page but I doubt 
+
+/* hide duplicate sponsors on front page */
+.template-home_page_view #footer .sponsorships{
+    display:none;
+}
+
+
+/* 
+this is specifically for the front page but I doubt 
 it should be anywhere in THIS site anyways so laziness 
-wins */
+wins 
+*/
 #link-presentation{
     display:none;
 }

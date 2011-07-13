@@ -28,8 +28,9 @@ setup(name='ploneconf2011.theme',
           'plonetheme.basic',
           'collective.easyslideshow',
 		  'webcouturier.dropdownmenu',
-      'collective.twitterportlet',
-      'Products.ContentWellPortlets',
+          'collective.twitterportlet',
+          'Products.ContentWellPortlets',
+          'plone.portlet.viewlet',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
