@@ -306,35 +306,20 @@ a:hover{
     */
      margin-left: 20%;    
 }
-/*
+
+
+
 #sitemap-wrap{
     -moz-border-radius: 15px;
     border-radius: 15px;
     background-color: #111;
     padding: 21px;
     padding-bottom: 0;
-	width: 380px;
-    margin: 2em;
+    width:60%;
+    margin: auto 18em;
     -moz-box-shadow: inset 1px 1px 3px #000;
     -webkit-box-shadow: inset 1px 1px 3px #000;
-    box-shadow: inner 1px 1px 3px #000;  
-    float: left;
-}
-*/
-
-/* Wyn quick edit*/
-
-#sitemap-wrap{
--moz-border-radius: 15px;
-border-radius: 15px;
-background-color: #111;
-padding: 21px;
-padding-bottom: 0;
-width:68%;
-margin: auto 13em;
--moz-box-shadow: inset 1px 1px 3px #000;
--webkit-box-shadow: inset 1px 1px 3px #000;
-box-shadow: inner 1px 1px 3px #000;
+    box-shadow: inner 1px 1px 3px #000;
 
 }
 
@@ -808,6 +793,9 @@ body.portaltype-plone-site .grid_width_is_9 {
 
 .sponsorships{
     padding-top: 10px;
+    /* align with footer */
+    width: 63%;
+    margin: auto 18em;
 }
 
 .sponsorships h2{
