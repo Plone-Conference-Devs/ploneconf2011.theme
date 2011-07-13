@@ -306,7 +306,7 @@ a:hover{
     */
      margin-left: 20%;    
 }
-
+/*
 #sitemap-wrap{
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -314,11 +314,28 @@ a:hover{
     padding: 21px;
     padding-bottom: 0;
 	width: 380px;
-	margin: 2em;
+    margin: 2em;
     -moz-box-shadow: inset 1px 1px 3px #000;
     -webkit-box-shadow: inset 1px 1px 3px #000;
     box-shadow: inner 1px 1px 3px #000;  
     float: left;
+}
+*/
+
+/* Wyn quick edit*/
+
+#sitemap-wrap{
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color: #111;
+padding: 21px;
+padding-bottom: 0;
+width:68%;
+margin: auto 13em;
+-moz-box-shadow: inset 1px 1px 3px #000;
+-webkit-box-shadow: inset 1px 1px 3px #000;
+box-shadow: inner 1px 1px 3px #000;
+
 }
 
 #footer-sitemap a,
@@ -787,7 +804,7 @@ body.portaltype-plone-site .grid_width_is_9 {
 }
 
 
-/* sponsor stuff */
+/* sponsor stuff 
 #sponsorships{
     padding-top: 10px;
 }
@@ -815,11 +832,44 @@ div.sponsor-no-image{
     font-weight: normal;
 }
 
+*/
+/* Wyn quick edit */
+
+
+
+#sponsorships{
+padding-top: 10px;
+}
+#sponsorships h2{
+font-size: 1.8em;
+
+}
+#sponsorships ul{
+
+}
+#sponsorships ul li{
+
+padding: 5px;
+}
+div.sponsor-no-image{
+font-size: 48px;
+font-family: SkinBonesRegular, Arial, sans-serif;
+line-height: 1em;
+color: #b31010;
+letter-spacing: 2px;
+font-weight: normal;
+padding-top:0.5em;
+}
 /* this is specifically for the front page but I doubt 
 it should be anywhere in THIS site anyways so laziness 
 wins */
 #link-presentation{
     display:none;
+}
+
+.section-event #content-core p iframe{
+   background-color: white;
+   padding: 10px;
 }
 
 /* -------------------------------------- */
