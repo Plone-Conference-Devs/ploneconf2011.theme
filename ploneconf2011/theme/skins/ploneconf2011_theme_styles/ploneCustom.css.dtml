@@ -865,6 +865,59 @@ wins
    padding: 10px;
 }
 
+
+/* talks and voting */
+.talk{
+    padding-bottom: 20px;
+    border-bottom: 3px solid #111;
+}
+
+.talk h3{
+    color: #EE6A23;
+}
+
+.talk .detail, .talk .synopsis{
+    /*background-color: #aeaeae;*/
+    background-color: #111;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.talk .bio{
+    color: #eee;
+    font-size: .9em;
+    background-color: #333;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.talk .detail{
+    margin-top: 5px;
+}
+
+.talk .control{
+    margin-top: 5px;
+    font-size: .9em;
+}
+
+.talk .control .discreet a{
+    color: #aeaeae !important;
+}
+
+.talk .audience{
+    background-color: #333;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+p.talks-intro{
+    margin-bottom: 1em;
+}
+
+
 /* -------------------------------------- */
 
 
